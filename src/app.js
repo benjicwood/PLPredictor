@@ -1,17 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Main extends React.Component {
-  render () {
-    return (
-      <div>
-        <h1>PL Predictor!</h1>
-      </div>
-    );
-  }
-}
+import Main from './Main';
 
-const app = document.getElementById('app');
-// ReactDOM.render(<Main />, app);
-
-ReactDOM.render(<Main />, app);
+ReactDOM.render(<Main />, document.getElementById('app'));
