@@ -17,7 +17,7 @@ export default class LeagueTable extends Component {
               <th><abbr title='Goals against'>GA</abbr></th>
               <th><abbr title='Goal difference'>GD</abbr></th>
               <th><abbr title='Points'>Pts</abbr></th>
-              <th>Qualification or relegation</th>
+              <th />
             </tr>
           </thead>
           <tfoot>
@@ -32,7 +32,7 @@ export default class LeagueTable extends Component {
               <th><abbr title='Goals against'>GA</abbr></th>
               <th><abbr title='Goal difference'>GD</abbr></th>
               <th><abbr title='Points'>Pts</abbr></th>
-              <th>Qualification or relegation</th>
+              <th />
             </tr>
           </tfoot>
           <tbody>
