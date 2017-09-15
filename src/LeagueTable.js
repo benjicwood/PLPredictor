@@ -231,7 +231,7 @@ export default class LeagueTable extends Component {
             </tr>
             <tr>
               <th>16</th>
-              <td><a title='A.F.C. Bournemouth'>AFC Bournemouth</a></td>
+              <td><a title='Bournemouth'>Bournemouth</a></td>
               <td>38</td>
               <td>11</td>
               <td>9</td>
@@ -244,7 +244,7 @@ export default class LeagueTable extends Component {
             </tr>
             <tr>
               <th>17</th>
-              <td><a title='Sunderland'>Sunderland</a></td>
+              <td><a title='Burnley'>Burnley</a></td>
               <td>38</td>
               <td>9</td>
               <td>12</td>
@@ -271,7 +271,7 @@ export default class LeagueTable extends Component {
             </tr>
             <tr>
               <th>19</th>
-              <td><a title='Norwich City'>Norwich City</a>
+              <td><a title='Huddersfield Town'>Huddersfield Town</a>
               </td>
               <td>38</td>
               <td>9</td>
@@ -285,7 +285,7 @@ export default class LeagueTable extends Component {
             </tr>
             <tr>
               <th>20</th>
-              <td><a title='Aston Villa'>Aston Villa</a>
+              <td><a title='Brighton and Hove Albion'>Brighton and Hove Albion</a>
               </td>
               <td>38</td>
               <td>3</td>
