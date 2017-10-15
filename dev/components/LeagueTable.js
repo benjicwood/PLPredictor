@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Team from './Team';
+import Team from '../containers/TeamList';
 
 export default class LeagueTable extends Component {
   render () {

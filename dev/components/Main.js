@@ -1,14 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-import LeagueTable from './LeagueTable';
+import Team from '../containers/TeamList';
 
-export default class Main extends Component {
-  render () {
-    return (
-      <div>
-        <h1>PL Predictor!</h1>
-        <LeagueTable />
-      </div>
-    );
-  }
-}
+const Main = () => (
+  <div>
+    <h1>PL Predictor!</h1>
+    <Team />
+  </div>
+);
+
+export default Main;
