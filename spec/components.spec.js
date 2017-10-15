@@ -7,7 +7,7 @@ import Adapter from 'enzyme-adapter-react-16';
 
 configure({ adapter: new Adapter() });
 
-import Main from '../src/components/Main';
+import Main from '../dev/components/Main';
 
 describe('components', () => {
   describe('<Main />', () => {
