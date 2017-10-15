@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import 
 
 export default class Team extends Component {
   render () {

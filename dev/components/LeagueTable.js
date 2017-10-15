@@ -6,6 +6,7 @@ export default class LeagueTable extends Component {
   render () {
     return (
       <div>
+        <Team />
       </div>
     );
   }
