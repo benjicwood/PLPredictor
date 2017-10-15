@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 // import
 
-class Team extends Component {
+class TeamList extends Component {
   renderList () {
     return this.props.teams.map((team) => {
       return (
@@ -27,4 +27,4 @@ function mapStateToProps (state) {
   };
 }
 
-export default connect(mapStateToProps)(Team);
+export default connect(mapStateToProps)(TeamList);

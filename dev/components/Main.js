@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Team from '../containers/TeamList';
+import TeamList from '../containers/TeamList';
 
 const Main = () => (
   <div>
     <h1>PL Predictor!</h1>
-    <Team />
+    <TeamList />
   </div>
 );
 
