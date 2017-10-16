@@ -6,17 +6,20 @@ class TeamList extends Component {
   renderList () {
     return this.props.teams.map((team) => {
       return (
-        <li key={team.id}>
-          {team.name} {team.points}
-        </li>
+        <tr className='table' key={team.id}>
+          <td>{team.name}</td>
+          <td>{team.played}</td>
+          <td>{team.gd}</td>
+          <td>{team.points}</td>
+        </tr>
       );
     });
   }
   render () {
     return (
-      <ul>
+      <div>
         {this.renderList()}
-      </ul>
+      </div>
     );
   }
 }
