@@ -1,17 +1,13 @@
 import React from 'react';
 
 import League from './League';
-import Fixtures from '../containers/Fixtures';
+import Schedule from './Schedule';
 
 const Main = () => (
-  <div style={LeagueBox}>
+  <div style={{flexDirection: 'row'}}>
     <League />
-    <Fixtures />
+    <Schedule />
   </div>
 );
-
-const LeagueBox = {
-  width: '400px'
-};
 
 export default Main;
