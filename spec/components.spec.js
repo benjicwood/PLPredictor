@@ -8,12 +8,13 @@ import Adapter from 'enzyme-adapter-react-16';
 configure({ adapter: new Adapter() });
 
 import Main from '../dev/components/Main';
+import League from '../dev/components/League';
 
 describe('components', () => {
   describe('<Main />', () => {
     it('should render the title', () => {
       const wrapper = shallow(<Main />);
-      expect(wrapper.contains(<h1>PL Predictor!</h1>)).to.be.true;
+      expect(wrapper.find(League)).to.have.length(1);
     });
   });
 });
