@@ -1,14 +1,17 @@
 import React from 'react';
 
-import TeamList from '../containers/TeamList';
+import League from './League';
 import Fixtures from '../containers/Fixtures';
 
 const Main = () => (
-  <div>
+  <div style={LeagueBox}>
+    <League />
     <Fixtures />
-    <h1>PL Predictor!</h1>
-    <TeamList />
   </div>
 );
+
+const LeagueBox = {
+  width: '400px'
+};
 
 export default Main;
