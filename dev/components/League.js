@@ -10,7 +10,10 @@ const League = () => (
 
 const LeagueBox = {
   width: '30%',
-  height: '80%'
+  height: '80%',
+  padding: '10px',
+  margin: '10px',
+  display: 'inline-block'
 };
 
 export default League;
