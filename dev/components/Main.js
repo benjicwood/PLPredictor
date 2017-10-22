@@ -4,7 +4,7 @@ import League from './League';
 import Schedule from './Schedule';
 
 const Main = () => (
-  <div style={{flexDirection: 'row'}}>
+  <div style={{background: '#99ff99'}}>
     <League />
     <Schedule />
   </div>

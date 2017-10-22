@@ -11,6 +11,7 @@ const Schedule = () => (
 const ScheduleBox = {
   width: '400px',
   justifyContent: 'right'
+
 };
 
 export default Schedule;

@@ -9,7 +9,8 @@ const League = () => (
 );
 
 const LeagueBox = {
-  width: '400px'
+  width: '30%',
+  height: '80%'
 };
 
 export default League;
