@@ -14,7 +14,9 @@ class Score extends Component {
 
 const ScoreStyle = {
   width: '40px',
-  textAlign: 'center'
+  height: '35px',
+  textAlign: 'center',
+  padding: '1px'
 };
 
 export default class Fixtures extends Component {
@@ -23,10 +25,10 @@ export default class Fixtures extends Component {
       <table>
         <tbody>
           <tr>
-            <td><p>Manchester United</p></td>
-            <td><Score /></td>
-            <td><Score /></td>
-            <td><p>Manchester City</p></td>
+            <td style={{paddingTop: '5', paddingLeft: '40', width: '200'}}><p>Manchester United</p></td>
+            <td style={{paddingLeft: '40'}}><Score /></td>
+            <td style={{paddingRight: '40'}}><Score /></td>
+            <td style={{paddingTop: '5', width: '200'}}><p>Manchester City</p></td>
           </tr>
         </tbody>
       </table>

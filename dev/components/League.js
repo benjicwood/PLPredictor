@@ -12,6 +12,7 @@ const LeagueBox = {
   width: '30%',
   padding: '0.5px',
   margin: '10px',
+  marginLeft: '50px',
   display: 'inline-block'
 };
 
