@@ -25,10 +25,10 @@ export default class Fixtures extends Component {
       <table>
         <tbody>
           <tr>
-            <td style={{paddingTop: '5', paddingLeft: '40', width: '200'}}><p>Manchester United</p></td>
-            <td style={{paddingLeft: '40'}}><Score /></td>
-            <td style={{paddingRight: '40'}}><Score /></td>
-            <td style={{paddingTop: '5', width: '200'}}><p>Manchester City</p></td>
+            <td style={{paddingTop: '5px', paddingLeft: '40px', width: '200px'}}><p>Manchester United</p></td>
+            <td style={{paddingLeft: '40px'}}><Score /></td>
+            <td style={{paddingRight: '40px'}}><Score /></td>
+            <td style={{paddingTop: '5px', width: '200px'}}><p>Manchester City</p></td>
           </tr>
         </tbody>
       </table>

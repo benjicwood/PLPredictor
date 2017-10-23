@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-// import
+
+import Header from './Header';
 
 class TeamList extends Component {
   renderList () {
@@ -18,6 +19,7 @@ class TeamList extends Component {
   render () {
     return (
       <div>
+        <Header />
         <table className='table is-striped is-fullwidth'>
           <tbody>
             {this.renderList()}

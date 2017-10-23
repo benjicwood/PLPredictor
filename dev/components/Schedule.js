@@ -14,7 +14,7 @@ const ScheduleBox = {
   margin: '10px',
   marginRight: '50px',
   float: 'right',
-  Top: '200'
+  Top: '200px'
 };
 
 export default Schedule;
