@@ -6,7 +6,7 @@ class TeamList extends Component {
   renderList () {
     return this.props.teams.map((team) => {
       return (
-        <tr className='table' key={team.id}>
+        <tr key={team.id}>
           <td>{team.name}</td>
           <td>{team.played}</td>
           <td>{team.gd}</td>
@@ -18,7 +18,11 @@ class TeamList extends Component {
   render () {
     return (
       <div>
-        {this.renderList()}
+        <table className='table is-striped is-fullwidth'>
+          <tbody>
+            {this.renderList()}
+          </tbody>
+        </table>
       </div>
     );
   }

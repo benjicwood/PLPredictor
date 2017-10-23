@@ -9,9 +9,9 @@ const Schedule = () => (
 );
 
 const ScheduleBox = {
-  width: '400px',
-  justifyContent: 'right'
-
+  width: '30%',
+  padding: '0.5px',
+  margin: '10px'
 };
 
 export default Schedule;
