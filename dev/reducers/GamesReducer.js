@@ -1,5 +1,7 @@
-export default function () {
-  return [
+import * as types from '../actions/types';
+
+const initState = {
+  League: [
     {
       id: 1,
       homeTeam: 'Manchester United',
@@ -70,5 +72,17 @@ export default function () {
       awayTeam: 'Newcastle United',
       awayScore: ''
     }
-  ];
+  ]
+};
+
+export default function GamesReducer (state, action) {
+  state = state || initState;
+  switch (action.type) {
+    case types.SET_POINTS:
+      return Object.assign({}, state, {
+        League: action.data
+      });
+      default:
+      return state;
+  }
 }

@@ -5,7 +5,7 @@ import Score from './Score';
 
 class Fixtures extends Component {
   renderList () {
-    return this.props.games.map((game) => {
+    return this.props.games.League.map((game) => {
       return (
         <tr key={game.id}>
           <td style={{paddingTop: '5px', paddingLeft: '5px', width: '200px', textAlign: 'right'}}>{game.homeTeam}</td>

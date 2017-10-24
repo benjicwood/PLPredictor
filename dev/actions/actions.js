@@ -6,6 +6,6 @@ import request from 'superagent';
 export function setPoints (points) {
   return {
     type: types.SET_POINTS,
-  //  games: parseInt(points.homeScore.toNumber())
+    teams: teams.points + points
   };
 }
