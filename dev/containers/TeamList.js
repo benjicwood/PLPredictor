@@ -32,7 +32,7 @@ class TeamList extends Component {
 
 function mapStateToProps (state) {
   return {
-    teams: state.teams
+    teams: state.teams.sort(function (a, b) { return b.points - a.points; })
   };
 }
 
