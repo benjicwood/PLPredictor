@@ -8,10 +8,10 @@ class Fixtures extends Component {
     return this.props.games.map((game) => {
       return (
         <tr key={game.id}>
-          <td style={{paddingTop: '5px', paddingLeft: '40px', width: '200px'}}>{game.homeTeam}</td>
+          <td style={{paddingTop: '5px', paddingLeft: '5px', width: '200px', textAlign: 'right'}}>{game.homeTeam}</td>
           <td style={{paddingLeft: '40px'}}><Score /></td>
           <td style={{paddingRight: '40px'}}><Score /></td>
-          <td style={{paddingTop: '5px', width: '200px'}}>{game.awayTeam}</td>
+          <td style={{paddingTop: '5px', width: '200px', textAlign: 'left'}}>{game.awayTeam}</td>
         </tr>
       );
     });
