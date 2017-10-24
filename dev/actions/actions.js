@@ -1,38 +1,11 @@
 import * as types from './types';
 import request from 'superagent';
-import { ROOT } from '../../config';
 
-/*
-
-export function fetchLeague () {
-  return (dispatch) => {
-    request
-    .get(`${ROOT}`)
-    .end((error, response) => {
-      if (error) dispatch(fetchLeagueError(error));
-      else dispatch(fetchLeagueSuccess(response.body));
-    });
-  };
-}
-
-export function fetchLeagueRequest () {
+// setPoints
+// setGD
+export function setPoints (points) {
   return {
-    types: types.FETCH_LEAGUE_REQUEST
+    type: types.SET_POINTS,
+  //  games: parseInt(points.homeScore.toNumber())
   };
 }
-
-export function fetchLeagueSuccess (teams) {
-  return {
-    types: types.FETCH_LEAGUE_SUCCESS,
-    teams: teams
-  };
-}
-
-export function fetchLeagueError (error) {
-  return {
-    types: types.FETCH_LEAGUE_ERROR,
-    error: error
-  };
-}
-
-*/

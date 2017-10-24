@@ -1,5 +1,2 @@
-/*
-export const FETCH_LEAGUE_REQUEST = 'FETCH_LEAGUE_REQUEST';
-export const FETCH_LEAGUE_SUCCESS = 'FETCH_LEAGUE_SUCCESS';
-export const FETCH_LEAGUE_ERROR = 'FETCH_LEAGUE_ERROR';
-*/
+export const SET_POINTS = 'SET_POINTS';
+export const SET_GD = 'SET_GD';

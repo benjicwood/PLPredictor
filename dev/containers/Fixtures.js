@@ -9,8 +9,7 @@ class Fixtures extends Component {
       return (
         <tr key={game.id}>
           <td style={{paddingTop: '5px', paddingLeft: '5px', width: '200px', textAlign: 'right'}}>{game.homeTeam}</td>
-          <td style={{paddingLeft: '40px'}}><Score /></td>
-          <td style={{paddingRight: '40px'}}><Score /></td>
+          <td style={{paddingLeft: '50px'}}><Score homeScore={this.homeTeam} awayScore={this.awayTeam} /></td>
           <td style={{paddingTop: '5px', width: '200px', textAlign: 'left'}}>{game.awayTeam}</td>
         </tr>
       );
