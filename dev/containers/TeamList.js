@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import Header from './Header';
+import sortLeague from '../functions/sortLeague';
 
 class TeamList extends Component {
   renderList () {
@@ -32,7 +33,7 @@ class TeamList extends Component {
 
 function mapStateToProps (state) {
   return {
-    teams: state.teams.sort(function (a, b) { return b.points - a.points; })
+    teams: state.teams.sort(sortLeague)
   };
 }
 
