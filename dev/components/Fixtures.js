@@ -1,35 +1,26 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import Score from './Score';
 
-// import Score from './Score';
-
-class Fixtures extends Component {
-  // renderList () {
-  //   return this.props.games.League.map((game) => {
-  //     return (
-  //       <tr key={game.id}>
-  //         <td style={{paddingTop: '5px', paddingLeft: '5px', width: '200px', textAlign: 'right'}}>{game.homeTeam}</td>
-  //         <td style={{paddingLeft: '50px'}}><Score homeScore={this.homeTeam} awayScore={this.awayTeam} /></td>
-  //         <td style={{paddingTop: '5px', width: '200px', textAlign: 'left'}}>{game.awayTeam}</td>
-  //       </tr>
-  //     );
-  //   });
-  // }
+export default class Fixtures extends Component {
+  renderList () {
+    return this.props.data.map((game) => {
+      return (
+        <tr key={game.id}>
+          <td style={{paddingTop: '5px', paddingLeft: '5px', width: '200px', textAlign: 'right'}}>{game.homeTeam}</td>
+          <td style={{paddingLeft: '50px'}}><Score homeScore={game.homeTeam} awayScore={game.awayTeam} /></td>
+          <td style={{paddingTop: '5px', width: '200px', textAlign: 'left'}}>{game.awayTeam}</td>
+        </tr>
+      );
+    });
+  }
   render () {
+      const { data } = this.props;
     return (
       <table>
         <tbody>
-          {/*{this.renderList()}*/}
+          { data && this.renderList() }
         </tbody>
       </table>
     );
   }
 }
-
-function mapStateToProps (state) {
-  return {
-    games: state.games
-  };
-}
-
-export default connect(mapStateToProps)(Fixtures);

@@ -15,6 +15,7 @@ export default class TeamList extends Component {
       );
     });
   }
+
   render () {
     const { data } = this.props;
     return (

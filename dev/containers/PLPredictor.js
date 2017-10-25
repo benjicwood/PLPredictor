@@ -7,16 +7,16 @@ import Fixtures from '../components/Fixtures';
 class PLPredictor extends Component {
     componentWillMount() {
         this.props.getTeamData();
+        this.props.getLeagueData();
     }
 
     render () {
-        const { teamsData } = this.props;
-
+        const { teamsData, leagueData } = this.props;
         return (
             <div>
                 {/*<AppHeader />*/}
                 <TeamList data={ teamsData } />
-                <Fixtures />
+                <Fixtures data={ leagueData }/>
             </div>
         )
     }
@@ -25,12 +25,14 @@ class PLPredictor extends Component {
 const mapStateToProps = state => {
     return {
         teamsData: state.teams.teams,
+        leagueData: state.league.teams,
     }
 }
 
 const mapDispatchToProps = dispatch => {
     return {
         getTeamData: () => dispatch( actions.setTeam() ),
+        getLeagueData: () => dispatch( actions.setLeague() ),
     }
 }
 

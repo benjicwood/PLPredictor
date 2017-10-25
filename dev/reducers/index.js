@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 import teams from './teams';
-// import GamesReducer from './GamesReducer';
+import league from './league';
 
 const allReducers = combineReducers({
   teams: teams,
-  // games: GamesReducer
+  league: league,
 });
 
 export default allReducers;
