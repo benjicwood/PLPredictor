@@ -4,6 +4,8 @@ import * as actions from '../actions/actions';
 import TeamList from '../components/TeamList';
 import Fixtures from '../components/Fixtures';
 
+import { Background } from '../styles/style.js';
+
 class PLPredictor extends Component {
   componentWillMount () {
     this.props.getTeamData();
@@ -13,7 +15,7 @@ class PLPredictor extends Component {
   render () {
     const { teamsData, leagueData } = this.props;
     return (
-      <div>
+      <div style={Background}>
         {/* <AppHeader /> */}
         <TeamList data={teamsData} />
         <Fixtures data={leagueData} />
