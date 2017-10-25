@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import * as actions from '../actions/actions';
 import TeamList from '../components/TeamList';
 import Fixtures from '../components/Fixtures';
 
 class PLPredictor extends Component {
     componentWillMount() {
-        // this.props.getTeamData();
+        this.props.getTeamData();
     }
 
     render () {
@@ -28,6 +29,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
+        getTeamData: () => dispatch( actions.setTeam() ),
     }
 }
 
