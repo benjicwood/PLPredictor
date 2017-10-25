@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import Score from './Score';
 
-import { FixtureTableStyle } from '../styles/style.js';
+import { FixtureTableStyle, HomeTeamStyle, AwayTeamStyle } from '../styles/style.js';
 
 export default class Fixtures extends Component {
   renderList () {
     return this.props.data.map((game) => {
       return (
         <tr key={game.id}>
-          <td>{game.homeTeam}</td>
+          <td style={HomeTeamStyle}>{game.homeTeam}</td>
           <td><Score {...game} /></td>
-          <td>{game.awayTeam}</td>
+          <td style={AwayTeamStyle}>{game.awayTeam}</td>
         </tr>
       );
     });
