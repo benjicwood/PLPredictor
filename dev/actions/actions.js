@@ -1,5 +1,5 @@
 import * as types from './types';
-import * as teamData from '../data/teams';
+import teams from '../data/teams';
 // setPoints
 // setGD
 // export function setPoints (points) {
@@ -19,6 +19,6 @@ import * as teamData from '../data/teams';
 export const setTeam = () => {
     return {
         type: types.SET_TEAM_DATA,
-        data: teamData,
+        teams: teams.teams,
     }
 };

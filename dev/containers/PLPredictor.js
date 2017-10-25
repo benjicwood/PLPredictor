@@ -10,12 +10,12 @@ class PLPredictor extends Component {
     }
 
     render () {
-        const { teamData } = this.props;
+        const { teamsData } = this.props;
 
         return (
             <div>
                 {/*<AppHeader />*/}
-                <TeamList data={ teamData } />
+                <TeamList data={ teamsData } />
                 <Fixtures />
             </div>
         )
@@ -24,6 +24,7 @@ class PLPredictor extends Component {
 
 const mapStateToProps = state => {
     return {
+        teamsData: state.teams.teams,
     }
 }
 

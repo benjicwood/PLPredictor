@@ -1,39 +1,31 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import sortLeague from '../functions/sortLeague';
-import TableHeader from './TableHeader'
+import TableHeader from './TableHeader';
 
-class TeamList extends Component {
+export default class TeamList extends Component {
   renderList () {
-    return this.props.teams.map((team) => {
+    return this.props.data.map((team) => {
       return (
-        <tr key={team.id}>
-          <td>{team.name}</td>
-          <td>{team.played}</td>
-          <td>{team.gd}</td>
-          <td>{team.points}</td>
+        <tr key={ team.id }>
+          <td>{ team.name }</td>
+          <td>{ team.played }</td>
+          <td>{ team.gd }</td>
+          <td>{ team.points }</td>
         </tr>
       );
     });
   }
   render () {
+    const { data } = this.props;
     return (
       <div>
           <TableHeader/>
             <table className='table is-striped is-fullwidth'>
                 <tbody>
-                    {this.renderList()}
+                { data && this.renderList() }
                 </tbody>
             </table>
       </div>
     );
-  }
+    }
 }
-
-function mapStateToProps (state) {
-  return {
-    teams: state.teams.sort(sortLeague)
-  };
-}
-
-export default connect(mapStateToProps)(TeamList);
