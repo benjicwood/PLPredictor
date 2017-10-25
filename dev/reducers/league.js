@@ -1,21 +1,18 @@
 import * as types from '../actions/types';
 
-export default function league ( initialState = {}, action ) {
-    const newState = { ...initialState };
+export default function league (initialState = {}, action) {
+  const newState = { ...initialState };
 
-    switch ( action.type ) {
-        case types.SET_LEAGUE_DATA: return setLeague( newState, action );
-        default: return newState;
-    }
+  switch (action.type) {
+    case types.SET_LEAGUE_DATA: return setLeague(newState, action);
+    default: return newState;
+  }
 }
 
-function setLeague( newState, action ) {
-    delete action.type;
-    return  Object.assign( newState, { ...action } );
+function setLeague (newState, action) {
+  delete action.type;
+  return Object.assign(newState, { ...action });
 }
-
-
-
 
 // export default function GamesReducer (state, action) {
 //   state = state || initState;
@@ -28,4 +25,3 @@ function setLeague( newState, action ) {
 //       return state;
 //   }
 // }
-

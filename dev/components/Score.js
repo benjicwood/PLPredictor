@@ -25,11 +25,11 @@ class Score extends Component {
   }
 }
 
-export default connect()( Score );
+export default connect()(Score);
 
 const ScoreStyle = {
-    width: '40px',
-    height: '35px',
-    textAlign: 'center',
-    padding: '1px',
-}
+  width: '40px',
+  height: '35px',
+  textAlign: 'center',
+  padding: '1px'
+};

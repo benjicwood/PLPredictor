@@ -6,7 +6,7 @@ export default class TeamList extends Component {
   renderList () {
     return this.props.data.map((team) => {
       return (
-        <tr key={ team.id }>
+        <tr key={team.id}>
           <td>{ team.name }</td>
           <td>{ team.played }</td>
           <td>{ team.gd }</td>
@@ -20,13 +20,13 @@ export default class TeamList extends Component {
     const { data } = this.props;
     return (
       <div>
-          <TableHeader/>
-            <table className='table is-striped is-fullwidth'>
-                <tbody>
-                { data && this.renderList() }
-                </tbody>
-            </table>
+        <TableHeader />
+        <table className='table is-striped is-fullwidth'>
+          <tbody>
+            { data && this.renderList() }
+          </tbody>
+        </table>
       </div>
     );
-    }
+  }
 }

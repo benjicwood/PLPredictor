@@ -4,7 +4,7 @@ import league from './league';
 
 const allReducers = combineReducers({
   teams: teams,
-  league: league,
+  league: league
 });
 
 export default allReducers;
