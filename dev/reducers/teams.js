@@ -33,6 +33,5 @@ function setGd (newState, action) {
 
 function setPlayed (newState, action) {
   delete action.type;
-
   return newState;
 }
