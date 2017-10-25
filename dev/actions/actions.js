@@ -2,18 +2,24 @@ import * as types from './types';
 import teams from '../data/teams';
 import league from '../data/league';
 
-export function setPoints( score ) {
+export function setPoints (score) {
   return {
-    type: types.SET_POINTS,
+    type: types.SET_POINTS
     // teams: teams.points + points
   };
 }
 
-export function setGD( score ) {
-    return {
-        type: types.SET_GD,
+export function setGD (score) {
+  return {
+    type: types.SET_GD
         // teams: teams.points + points
-    };
+  };
+}
+
+export function setPlayed (score) {
+  return {
+    type: types.SET_PLAYED
+  };
 }
 
 // export const getTeam = () => {
@@ -29,15 +35,15 @@ export function setGD( score ) {
 // }
 
 export const setTeam = () => {
-    return {
-        type: types.SET_TEAM_DATA,
-        teams: teams.teams,
-    }
+  return {
+    type: types.SET_TEAM_DATA,
+    teams: teams.teams
+  };
 };
 
 export const setLeague = () => {
-    return {
-        type: types.SET_LEAGUE_DATA,
-        teams: league.league,
-    }
+  return {
+    type: types.SET_LEAGUE_DATA,
+    teams: league.league
+  };
 };

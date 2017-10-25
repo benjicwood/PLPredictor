@@ -7,6 +7,7 @@ export default function teams (initialState = {}, action) {
     case types.SET_TEAM_DATA: return setTeams(newState, action);
     case types.SET_POINTS: return setPoints(newState, action);
     case types.SET_GD: return setGd(newState, action);
+    case types.SET_PLAYED: return setPlayed(newState, action);
     default: return newState;
   }
 }
@@ -27,5 +28,11 @@ function setGd (newState, action) {
   delete action.type;
 
     // console.log( 'reducer',newState.teams )
+  return newState;
+}
+
+function setPlayed (newState, action) {
+  delete action.type;
+
   return newState;
 }

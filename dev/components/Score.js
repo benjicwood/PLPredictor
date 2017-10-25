@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { setPoints, setGD } from '../actions/actions';
+import { setPoints, setGD, setPlayed } from '../actions/actions';
 
 class Score extends Component {
   constructor (props) {
@@ -12,6 +12,7 @@ class Score extends Component {
     const score = event.target.value;
     this.props.dispatch(setPoints(score));
     this.props.dispatch(setGD(score));
+    this.props.dispatch(setPlayed(score));
   }
   render () {
     return (
