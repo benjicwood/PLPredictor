@@ -8,9 +8,9 @@ export default class TableHeader extends Component {
           <thead>
             <tr>
               <th>Team</th>
-              <th style={{paddingLeft: '235px'}}><abbr title='Played'>Pld</abbr></th>
-              <th><abbr title='Goal difference' style={{paddingRight: '15px'}}>GD</abbr></th>
-              <th><abbr title='Points' style={{paddingRight: '15px'}}>Pts</abbr></th>
+              <th><abbr title='Played'>Pld</abbr></th>
+              <th><abbr title='Goal difference'>GD</abbr></th>
+              <th><abbr title='Points'>Pts</abbr></th>
             </tr>
           </thead>
         </table>

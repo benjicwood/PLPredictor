@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 // import sortLeague from '../functions/sortLeague';
 import TableHeader from './TableHeader';
 
+import { LeagueTableStyle } from '../styles/style.js';
+
 export default class TeamList extends Component {
   renderList () {
     return this.props.data.map((team) => {
@@ -19,7 +21,7 @@ export default class TeamList extends Component {
   render () {
     const { data } = this.props;
     return (
-      <div>
+      <div style={LeagueTableStyle}>
         <TableHeader />
         <table className='table is-striped is-fullwidth'>
           <tbody>
