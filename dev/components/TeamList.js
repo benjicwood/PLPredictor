@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import sortLeague from '../functions/sortLeague';
+// import sortLeague from '../functions/sortLeague';
 import TableHeader from './TableHeader';
 
 export default class TeamList extends Component {
