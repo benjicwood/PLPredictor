@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Fixtures from '../containers/Fixtures';
+import Fixtures from './Fixtures';
 
 const Schedule = () => (
   <div className='box' style={ScheduleBox}>

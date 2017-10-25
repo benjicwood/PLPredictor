@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-
-import Header from './Header';
 import sortLeague from '../functions/sortLeague';
+import TableHeader from './TableHeader'
 
 class TeamList extends Component {
   renderList () {
@@ -20,12 +19,12 @@ class TeamList extends Component {
   render () {
     return (
       <div>
-        <Header />
-        <table className='table is-striped is-fullwidth'>
-          <tbody>
-            {this.renderList()}
-          </tbody>
-        </table>
+          <TableHeader/>
+            <table className='table is-striped is-fullwidth'>
+                <tbody>
+                    {this.renderList()}
+                </tbody>
+            </table>
       </div>
     );
   }

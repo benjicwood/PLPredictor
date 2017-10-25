@@ -9,7 +9,7 @@ configure({ adapter: new Adapter() });
 
 import Main from '../dev/components/Main';
 import League from '../dev/components/League';
-import Fixtures from '../dev/containers/Fixtures';
+import Fixtures from '../dev/components/Fixtures';
 
 describe('components', () => {
   describe('<Main />', () => {
