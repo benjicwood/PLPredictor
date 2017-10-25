@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 import { setPoints, setGD } from '../actions/actions';
 
-export default class Score extends Component {
+class Score extends Component {
   constructor (props) {
     super(props);
     this.handleInputChange = this.handleInputChange.bind(this);
   }
   handleInputChange (event) {
-    this.props.dispatch(setPoints(event.target.value));
-    this.props.dispatch(setGD(event.target.value));
+    const score = event.target.value;
+    this.props.dispatch(setPoints(score));
+    this.props.dispatch(setGD(score));
   }
   render () {
     return (
@@ -23,9 +25,11 @@ export default class Score extends Component {
   }
 }
 
+export default connect()( Score );
+
 const ScoreStyle = {
-  width: '40px',
-  height: '35px',
-  textAlign: 'center',
-  padding: '1px'
-};
+    width: '40px',
+    height: '35px',
+    textAlign: 'center',
+    padding: '1px',
+}

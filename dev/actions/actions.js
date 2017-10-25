@@ -1,16 +1,20 @@
 import * as types from './types';
 import teams from '../data/teams';
 import league from '../data/league';
-console.log( league )
 
-// setPoints
-// setGD
-// export function setPoints (points) {
-//   return {
-//     type: types.SET_POINTS,
-//     teams: teams.points + points
-//   };
-// }
+export function setPoints( score ) {
+  return {
+    type: types.SET_POINTS,
+    // teams: teams.points + points
+  };
+}
+
+export function setGD( score ) {
+    return {
+        type: types.SET_GD,
+        // teams: teams.points + points
+    };
+}
 
 // export const getTeam = () => {
 //   return {
@@ -23,8 +27,6 @@ console.log( league )
 //     // if the data was obtained async
 //   }
 // }
-
-
 
 export const setTeam = () => {
     return {
