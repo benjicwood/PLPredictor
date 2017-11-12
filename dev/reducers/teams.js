@@ -19,15 +19,11 @@ function setTeams (newState, action) {
 
 function setPoints (newState, action) {
   delete action.type;
-
-    // console.log( 'reducer',newState.teams )
   return newState;
 }
 
 function setGd (newState, action) {
   delete action.type;
-
-    // console.log( 'reducer',newState.teams )
   return newState;
 }
 

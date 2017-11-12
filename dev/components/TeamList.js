@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-// import sortLeague from '../functions/sortLeague';
 import TableHeader from './TableHeader';
+
+import sortLeague from '../functions/sortLeague';
 
 import { LeagueTableStyle } from '../styles/style.js';
 
 export default class TeamList extends Component {
   renderList () {
-    return this.props.data.map((team) => {
+    return this.props.data.sort(sortLeague).map((team) => {
       return (
         <tr key={team.id}>
           <td>{ team.name }</td>

@@ -4,6 +4,8 @@ import * as actions from '../actions/actions';
 import TeamList from '../components/TeamList';
 import Fixtures from '../components/Fixtures';
 
+import sortLeague from '../functions/sortLeague';
+
 import { Background } from '../styles/style.js';
 
 class PLPredictor extends Component {
