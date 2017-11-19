@@ -4,8 +4,8 @@ import league from '../data/league';
 
 export function setPoints (score) {
   return {
-    type: types.SET_POINTS
-    // teams: teams.points + points
+    type: types.SET_POINTS,
+    score: score
   };
 }
 

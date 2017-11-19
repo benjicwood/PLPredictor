@@ -18,7 +18,13 @@ function setTeams (newState, action) {
 }
 
 function setPoints (newState, action) {
+  console.log('action:')
+  console.log(action)
+  console.log('newState:')
+  console.log(newState)
+  console.log(newState.teams[0].played)
   delete action.type;
+  newState.teams[0].played = newState.teams[0].played + 1;
   return newState;
 }
 
