@@ -1,6 +1,6 @@
 import React from 'react';
 
-import TeamList from '../containers/TeamList';
+import TeamList from './TeamList';
 
 const League = () => (
   <div className='box' style={LeagueBox}>

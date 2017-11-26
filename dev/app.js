@@ -6,15 +6,13 @@ import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import promise from 'redux-promise';
 import { createLogger } from 'redux-logger';
-
-import Main from './components/Main';
-
+import PLPredictor from './containers/PLPredictor';
 import reducer from './reducers/index';
 
 const logger = createLogger();
 const store = createStore(reducer, composeWithDevTools(applyMiddleware(logger, thunk, promise)));
 
 ReactDOM.render(
-  <Provider store={store}><Main /></Provider>,
+  <Provider store={store}><PLPredictor /></Provider>,
     document.getElementById('app')
   );

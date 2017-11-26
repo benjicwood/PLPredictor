@@ -1,0 +1,94 @@
+{
+    "league": [
+    {
+        "id": 1,
+        "homeTeam": "Arsenal",
+        "homeTeamid": 1,
+        "homeScore": "",
+        "awayTeam": "Tottenham Hotspur",
+        "awayTeamid": 17,
+        "awayScore": ""
+    },
+    {
+        "id": 2,
+        "homeTeam": "Bournemouth",
+        "homeTeamid": 2,
+        "homeScore": "",
+        "awayTeam": "Huddersfield Town",
+        "awayTeamid": 8,
+        "awayScore": ""
+    },
+    {
+        "id": 3,
+        "homeTeam": "Burnley",
+        "homeTeamid": 4,
+        "homeScore": "",
+        "awayTeam": "Swansea City",
+        "awayTeamid": 16,
+        "awayScore": ""
+    },
+    {
+        "id": 4,
+        "homeTeam": "Crystal Palace",
+        "homeTeamid": 6,
+        "homeScore": "",
+        "awayTeam": "Everton",
+        "awayTeamid": 7,
+        "awayScore": ""
+    },
+    {
+        "id": 5,
+        "homeTeam": "Leicester City",
+        "homeTeamid": 9,
+        "homeScore": "",
+        "awayTeam": "Manchester City",
+        "awayTeamid": 11,
+        "awayScore": ""
+    },
+    {
+        "id": 6,
+        "homeTeam": "Liverpool",
+        "homeTeamid": 10,
+        "homeScore": "",
+        "awayTeam": "Southampton",
+        "awayTeamid": 14,
+        "awayScore": ""
+    },
+    {
+        "id": 7,
+        "homeTeam": "West Bromwich Albion",
+        "homeTeamid": 2,
+        "homeScore": "",
+        "awayTeam": "Chelsea",
+        "awayTeamid": 5,
+        "awayScore": ""
+    },
+    {
+        "id": 8,
+        "homeTeam": "Brighton and Hove Albion",
+        "homeTeamid": 19,
+        "homeScore": "",
+        "awayTeam": "Southampton",
+        "awayTeamid": 14,
+        "awayScore": ""
+    },
+    {
+        "id": 9,
+        "homeTeam": "Manchester United",
+        "homeTeamid": 12,
+        "homeScore": "",
+        "awayTeam": "Newcastle United",
+        "awayTeamid": 13,
+        "awayScore": ""
+    },
+    {
+        "id": 10,
+        "homeTeam": "Watford",
+        "homeTeamid": 18,
+        "homeScore": "",
+        "awayTeam": "West Ham United",
+        "awayTeamid": 20,
+        "awayScore": ""
+    }
+  ]
+}

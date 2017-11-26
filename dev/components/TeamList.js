@@ -1,0 +1,35 @@
+import React, { Component } from 'react';
+import TableHeader from './TableHeader';
+
+import sortLeague from '../functions/sortLeague';
+
+import { LeagueTableStyle } from '../styles/style.js';
+
+export default class TeamList extends Component {
+  renderList () {
+    return this.props.data.sort(sortLeague).map((team) => {
+      return (
+        <tr key={team.id}>
+          <td>{ team.name }</td>
+          <td>{ team.played }</td>
+          <td>{ team.gd }</td>
+          <td>{ team.points }</td>
+        </tr>
+      );
+    });
+  }
+
+  render () {
+    const { data } = this.props;
+    return (
+      <div style={LeagueTableStyle}>
+        <TableHeader />
+        <table className='table is-striped is-fullwidth'>
+          <tbody>
+            { data && this.renderList() }
+          </tbody>
+        </table>
+      </div>
+    );
+  }
+}
