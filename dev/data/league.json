@@ -3,7 +3,7 @@
     {
         "id": 1,
         "homeTeam": "Arsenal",
-        "homeTeamid": 2,
+        "homeTeamid": 1,
         "homeScore": "",
         "awayTeam": "Tottenham Hotspur",
         "awayTeamid": 17,
@@ -48,7 +48,7 @@
     {
         "id": 6,
         "homeTeam": "Liverpool",
-        "homeTeamid": 9,
+        "homeTeamid": 10,
         "homeScore": "",
         "awayTeam": "Southampton",
         "awayTeamid": 14,

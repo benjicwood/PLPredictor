@@ -10,6 +10,4 @@ const Main = () => (
   </div>
 );
 
-// 7PYQxNgfUxZDlZbBLx8VbO7a8LzJvsFTMNTfbLqcLeGPMF5KGTbbS0L800Cn
-
 export default Main;

@@ -9,7 +9,7 @@ export default class Fixtures extends Component {
       return (
         <tr key={game.id}>
           <td style={HomeTeamStyle}>{game.homeTeam}</td>
-          <td><Score {...game} /></td>
+          <td><Score {...game} />{console.log(game.awayTeamid)}</td>
           <td style={AwayTeamStyle}>{game.awayTeam}</td>
         </tr>
       );
