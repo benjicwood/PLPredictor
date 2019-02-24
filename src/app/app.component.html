@@ -3,8 +3,10 @@
     {{ title }}
   </h1>
   <div *ngFor="let team of league">
-    <h2>{{team.team}}</h2>
+    <h2>{{team.team}} {{team.points}} {{team.gd}}</h2>
   </div>
+  <button (click)="matchResultsUpdateTable(2, 1, 1, 1)">button</button>
+
 </div>
 
 
