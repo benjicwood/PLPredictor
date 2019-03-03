@@ -38,7 +38,7 @@
   </table>
 </div>
 <div class="buttonwrapper">
-  <button class="button" (click)="matchResultsUpdateTable(MUScore, LVScore, 1, 1)">button</button>
+  <button class="button" (click)="matchResultsUpdateTable(MUScore, LVScore, THScore, ARScore)">button</button>
 </div>
 
 
@@ -56,7 +56,19 @@
                minlength="0" maxlength="2" placeholder="0" size="2">
           </div></td>
         <td><abbr title="Away">Liverpool</abbr></td>
-      </tr>
+    </tr>
+    <tr>
+        <td><abbr title="Home"></abbr>Tottenham Hotspur</td>
+        <td><abbr title="HomeG"></abbr><div>
+            <input [(ngModel)]="THScore" type="number" id="name" name="name" required
+               minlength="0" maxlength="2" placeholder="0" size="2">
+          </div></td>
+        <td><abbr title="AwayG"></abbr><div>
+            <input [(ngModel)]="ARScore" type="number" id="name" name="name" required
+               minlength="0" maxlength="2" placeholder="0" size="2">
+          </div></td>
+        <td><abbr title="Away">Arsenal</abbr></td>
+    </tr>
 
 </tbody>
 </table>

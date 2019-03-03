@@ -9,6 +9,8 @@ export class AppComponent {
 
   public MUScore: number;
   public LVScore: number;
+  public THScore: number;
+  public ARScore: number;
 
 
   public title: string = 'PLPredictor'
@@ -31,16 +33,13 @@ public sortLeague(a, b): any {
   return comparison
 }
 
-public matchResultsUpdateTable(MUScore, LVScore, TH, AR): any {
+public matchResultsUpdateTable(MUScore, LVScore, THScore, ARScore): any {
   let newLeague = this.league
 
-  console.log('MU', MUScore, 'LV', LVScore)
- // let MUPoints = MU > LV ? 3 : MU === LV ? 1 : 0
- // let LVPoints = LV > MU ? 3 : LV === MU ? 1 : 0
  let MUPoints = MUScore > LVScore ? 3 : MUScore === LVScore ? 1 : 0
  let LVPoints = LVScore > MUScore ? 3 : LVScore === MUScore ? 1 : 0
-  let THPoints = TH > AR ? 3 : TH === AR ? 1 : 0
-  let ARPoints = AR > TH ? 3 : AR === TH ? 1 : 0
+  let THPoints = THScore > ARScore ? 3 : THScore === ARScore ? 1 : 0
+  let ARPoints = ARScore > THScore ? 3 : ARScore === THScore ? 1 : 0
 
   for(var i = 0; i < newLeague.length; i++) {
     if (newLeague[i]['team'] === 'Manchester United') {
@@ -53,12 +52,12 @@ public matchResultsUpdateTable(MUScore, LVScore, TH, AR): any {
      } 
     else if (newLeague[i]['team'] === 'Tottenham Hotspur') {
        newLeague[i]['points'] += THPoints
-       newLeague[i]['gd'] += TH - AR
+       newLeague[i]['gd'] += (THScore - ARScore)
  
      }
      else if (newLeague[i]['team'] === 'Arsenal') {
        newLeague[i]['points'] += ARPoints
-       newLeague[i]['gd'] += AR - TH
+       newLeague[i]['gd'] += (ARScore - THScore)
  
      }
  
