@@ -1,12 +1,65 @@
-<div style="text-align:center">
-  <h1>
+<div class="overlay">
+  <div>
+  <h1 class="title">
     {{ title }}
   </h1>
-  <div *ngFor="let team of league">
-    <h2>{{team.team}} {{team.points}} {{team.gd}}</h2>
-  </div>
-  <button (click)="matchResultsUpdateTable(2, 1, 1, 1)">button</button>
 
+  <!-- table -->
+  <div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th><abbr title="Position">Pos</abbr></th>
+        <th>Team</th>
+        <th><abbr title="Played">Pld</abbr></th>
+        <th><abbr title="Won">W</abbr></th>
+        <th><abbr title="Drawn">D</abbr></th>
+        <th><abbr title="Lost">L</abbr></th>
+        <th><abbr title="Goal difference">GD</abbr></th>
+        <th><abbr title="Points">Pts</abbr></th>
+      </tr>
+    </thead>
+    <tfoot>
+    </tfoot>
+    <tbody>
+      <tr *ngFor="let team of league">
+        <th>0</th>
+        <td>{{team.team}}
+        </td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>{{team.gd}}</td>
+        <td>{{team.points}}</td>
+      </tr>
+      <tr>
+    </tbody>
+  </table>
+</div>
+<div class="buttonwrapper">
+  <button class="button" (click)="matchResultsUpdateTable(MUScore, LVScore, 1, 1)">button</button>
 </div>
 
 
+  <div>
+<table class="table">
+<tbody>
+    <tr>
+        <td><abbr title="Home">Manchester United</abbr></td>
+        <td><abbr title="HomeG"></abbr><div>
+            <input [(ngModel)]="MUScore" type="number" id="name" name="name" required
+               minlength="0" maxlength="2" placeholder="0" size="2">
+          </div></td>
+        <td><abbr title="AwayG"></abbr><div>
+            <input [(ngModel)]="LVScore" type="number" id="name" name="name" required
+               minlength="0" maxlength="2" placeholder="0" size="2">
+          </div></td>
+        <td><abbr title="Away">Liverpool</abbr></td>
+      </tr>
+
+</tbody>
+</table>
+</div>
+</div>
+</div>

@@ -3,9 +3,14 @@ import { Component } from '@angular/core'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss', '../node_modules/bulma/css/bulma.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  public MUScore: number;
+  public LVScore: number;
+
+
   public title: string = 'PLPredictor'
   public league: object[] = [
     {team: 'Manchester United', points: 0, gd: 0},
@@ -26,22 +31,25 @@ public sortLeague(a, b): any {
   return comparison
 }
 
-public matchResultsUpdateTable(MU, LV, TH, AR): any {
+public matchResultsUpdateTable(MUScore, LVScore, TH, AR): any {
   let newLeague = this.league
 
-  let MUPoints = MU > LV ? 3 : MU === LV ? 1 : 0
-  let LVPoints = LV > MU ? 3 : LV === MU ? 1 : 0
+  console.log('MU', MUScore, 'LV', LVScore)
+ // let MUPoints = MU > LV ? 3 : MU === LV ? 1 : 0
+ // let LVPoints = LV > MU ? 3 : LV === MU ? 1 : 0
+ let MUPoints = MUScore > LVScore ? 3 : MUScore === LVScore ? 1 : 0
+ let LVPoints = LVScore > MUScore ? 3 : LVScore === MUScore ? 1 : 0
   let THPoints = TH > AR ? 3 : TH === AR ? 1 : 0
   let ARPoints = AR > TH ? 3 : AR === TH ? 1 : 0
 
   for(var i = 0; i < newLeague.length; i++) {
     if (newLeague[i]['team'] === 'Manchester United') {
        newLeague[i]['points'] += MUPoints
-       newLeague[i]['gd'] += MU - LV
+       newLeague[i]['gd'] += (MUScore - LVScore)
      }
     else if (newLeague[i]['team'] === 'Liverpool') {
        newLeague[i]['points'] += LVPoints
-       newLeague[i]['gd'] += LV - MU
+       newLeague[i]['gd'] += (LVScore - MUScore)
      } 
     else if (newLeague[i]['team'] === 'Tottenham Hotspur') {
        newLeague[i]['points'] += THPoints
