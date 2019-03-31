@@ -7,23 +7,20 @@ import { Component } from '@angular/core'
 })
 export class AppComponent {
 
-  public MUScore: number;
-  public LVScore: number;
-  public THScore: number;
-  public ARScore: number;
-
-
   public title: string = 'PLPredictor'
   public league: object[] = [
     {team: 'Manchester United', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
     {team: 'Liverpool', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
     {team: 'Tottenham Hotspur', played: 0, won: 0, drawn: 0, lost: 0,points: 0, gd: 0},
-    {team: 'Arsenal', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0}
+    {team: 'Arsenal', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Manchester City', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Chelsea', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0}
   ]
 
   public fixtures: object[] = [
-    {home: 'Manchester United', homeScore: 'MUScore', awayScore: 'LVScore', away: 'Liverpool'},
-    {home: 'Tottenham Hotspur', homeScore: 'THScore', awayScore: 'ARScore', away: 'Arsenal'}
+    {home: 'Manchester United', homeScore: null, awayScore: null, away: 'Liverpool'},
+    {home: 'Tottenham Hotspur', homeScore: null, awayScore: null, away: 'Arsenal'},
+    {home: 'Manchester City', homeScore: null, awayScore: null, away: 'Chelsea'}
   ]
 
 public sortLeague(a, b): any {
@@ -71,7 +68,9 @@ public reset() {
     {team: 'Manchester United', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
     {team: 'Liverpool', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
     {team: 'Tottenham Hotspur', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
-    {team: 'Arsenal', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0}
+    {team: 'Arsenal', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Manchester City', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Chelsea', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0}
   ]  
 }
 
