@@ -14,13 +14,34 @@ export class AppComponent {
     {team: 'Tottenham Hotspur', played: 0, won: 0, drawn: 0, lost: 0,points: 0, gd: 0},
     {team: 'Arsenal', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
     {team: 'Manchester City', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
-    {team: 'Chelsea', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0}
+    {team: 'Chelsea', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Everton', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Wolverhampton Wanderers', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Leicester City', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Watford', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'West Ham United', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Bournemouth', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Crystal Palace', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Newcastle United', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Brighton and Hove Albion', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Southampton', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Burnley', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Cardiff City', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Fulham', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Huddersfield Town', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0}
   ]
 
   public fixtures: object[] = [
     {home: 'Manchester United', homeScore: null, awayScore: null, away: 'Liverpool'},
     {home: 'Tottenham Hotspur', homeScore: null, awayScore: null, away: 'Arsenal'},
-    {home: 'Manchester City', homeScore: null, awayScore: null, away: 'Chelsea'}
+    {home: 'Manchester City', homeScore: null, awayScore: null, away: 'Chelsea'},
+    {home: 'Everton', homeScore: null, awayScore: null, away: 'Wolverhampton Wanderers'},
+    {home: 'Leicester City', homeScore: null, awayScore: null, away: 'Watford'},
+    {home: 'West Ham United', homeScore: null, awayScore: null, away: 'Bournemouth'},
+    {home: 'Crystal Palace', homeScore: null, awayScore: null, away: 'Newcastle United'},
+    {home: 'Brighton and Hove Albion', homeScore: null, awayScore: null, away: 'Southampton'},
+    {home: 'Burnley', homeScore: null, awayScore: null, away: 'Cardiff City'},
+    {home: 'Fulham', homeScore: null, awayScore: null, away: 'Huddersfield Town'}
   ]
 
 public sortLeague(a, b): any {
@@ -70,7 +91,21 @@ public reset() {
     {team: 'Tottenham Hotspur', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
     {team: 'Arsenal', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
     {team: 'Manchester City', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
-    {team: 'Chelsea', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0}
+    {team: 'Chelsea', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Everton', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Wolverhampton Wanderers', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Leicester City', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Watford', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'West Ham United', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Bournemouth', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Crystal Palace', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Newcastle United', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Brighton and Hove Albion', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Southampton', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Burnley', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Cardiff City', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Fulham', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0},
+    {team: 'Huddersfield Town', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0}
   ]  
 }
 
