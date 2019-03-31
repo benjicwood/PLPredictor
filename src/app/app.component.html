@@ -38,7 +38,7 @@
   </table>
 </div>
 <div class="buttonwrapper">
-  <button class="button" (click)="matchResultsUpdateTable(MUScore, LVScore, THScore, ARScore)">update</button>
+  <button class="button" (click)="matchResultsUpdateTable(this.fixtures)">update</button>
 </div>
 <div class="buttonwrapper">
     <button class="button" (click)="reset()">reset</button>
@@ -47,29 +47,17 @@
 <div>
 <table class="table">
 <tbody>
-    <tr>
-        <td><abbr title="Home">Manchester United</abbr></td>
+    <tr *ngFor="let fixture of fixtures">
+        <td><abbr title="Home">{{fixture.home}}</abbr></td>
         <td><abbr title="HomeG"></abbr><div>
-            <input [(ngModel)]="MUScore" type="number" id="name" name="name" required
+            <input [(ngModel)]="fixture.homeScore" type="number" id="name" name="name" required
                minlength="0" maxlength="2" placeholder="0" size="2">
           </div></td>
         <td><abbr title="AwayG"></abbr><div>
-            <input [(ngModel)]="LVScore" type="number" id="name" name="name" required
+            <input [(ngModel)]="fixture.awayScore" type="number" id="name" name="name" required
                minlength="0" maxlength="2" placeholder="0" size="2">
           </div></td>
-        <td><abbr title="Away">Liverpool</abbr></td>
-    </tr>
-    <tr>
-        <td><abbr title="Home"></abbr>Tottenham Hotspur</td>
-        <td><abbr title="HomeG"></abbr><div>
-            <input [(ngModel)]="THScore" type="number" id="name" name="name" required
-               minlength="0" maxlength="2" placeholder="0" size="2">
-          </div></td>
-        <td><abbr title="AwayG"></abbr><div>
-            <input [(ngModel)]="ARScore" type="number" id="name" name="name" required
-               minlength="0" maxlength="2" placeholder="0" size="2">
-          </div></td>
-        <td><abbr title="Away">Arsenal</abbr></td>
+        <td><abbr title="Away">{{fixture.away}}</abbr></td>
     </tr>
 
 </tbody>
