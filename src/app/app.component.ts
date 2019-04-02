@@ -44,14 +44,29 @@ export class AppComponent {
     {home: 'Fulham', homeScore: null, awayScore: null, away: 'Huddersfield Town'}
   ]
 
-public sortLeague(a, b): any {
-  const teamA = a.points
-  const teamB = b.points
+public sortGd(a, b): any {
+  const aGoalDiff = a.gd
+  const bGoalDiff = b.gd
 
   let comparison = 0
 
-  if (teamA > teamB) { comparison = 1 } 
-  else if (teamA < teamB) { comparison = -1 }
+  if (aGoalDiff > bGoalDiff) { comparison = 1 } 
+  if (aGoalDiff < bGoalDiff) { comparison = -1 }
+
+  return comparison
+}
+
+public sortLeague(a, b): any {
+  const aPoints = a.points
+  const bPoints = b.points
+
+  const aGoalDiff = a.gd
+  const bGoalDiff = b.gd
+
+  let comparison = 0
+
+  if (aPoints > bPoints) { comparison = 1 } 
+  if (aPoints < bPoints) { comparison = -1 }
 
   return comparison
 }
@@ -81,7 +96,7 @@ public matchResultsUpdateTable(fixtures): any {
    }
  }
 
-   return newLeague.sort(this.sortLeague).reverse();
+   return newLeague.sort(this.sortGd).sort(this.sortLeague).reverse();
 }
  
 public reset() {
