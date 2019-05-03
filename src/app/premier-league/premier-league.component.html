@@ -1,16 +1,9 @@
 <div class="overlay">
-  <div>
-	  <a href="">
-  <h1 class="title">
-    {{ title }}
-  </h1>
-  </a>
 
-  <!-- table -->
-  <div>
-  <table class="table">
+	<!-- table -->
+  <table class="league-table">
+
     <thead>
-
       <tr>
         <th><abbr title="Position">Pos</abbr></th>
         <th>Team</th>
@@ -22,13 +15,11 @@
         <th><abbr title="Points">Pts</abbr></th>
       </tr>
     </thead>
-    <tfoot>
-    </tfoot>
-    <tbody>
+
+     <tbody>
       <tr *ngFor="let team of league">
         <th></th>
-        <td>{{team.team}}
-        </td>
+        <td>{{team.team}}</td>
         <td>{{team.played}}</td>
         <td>{{team.won}}</td>
         <td>{{team.drawn}}</td>
@@ -36,35 +27,36 @@
         <td>{{team.gd}}</td>
         <td>{{team.points}}</td>
       </tr>
-      <tr>
-    </tbody>
+     </tbody>
+
   </table>
-</div>
-<div class="buttonwrapper">
-  <button class="button" (click)="matchResultsUpdateTable(this.fixtures)">update</button>
-</div>
-<div class="buttonwrapper">
-    <button class="button" (click)="reset()">reset</button>
-  </div>
 
-<div>
-<table class="table">
-<tbody>
-    <tr *ngFor="let fixture of fixtures">
-        <td><abbr title="Home">{{fixture.home}}</abbr></td>
-        <td><abbr title="HomeG"></abbr><div>
-            <input [(ngModel)]="fixture.homeScore" type="number" id="name" name="name" required
-               minlength="0" maxlength="2" placeholder="0" size="2">
-          </div></td>
-        <td><abbr title="AwayG"></abbr><div>
-            <input [(ngModel)]="fixture.awayScore" type="number" id="name" name="name" required
-               minlength="0" maxlength="2" placeholder="0" size="2">
-          </div></td>
+	<!-- fixtures -->
+  <table class="fixtures-table">
+
+	<tbody>
+   	 <tr *ngFor="let fixture of fixtures">
+        <td style="text-align:right;"><abbr title="Home">{{fixture.home}}</abbr></td>
+         <td><abbr title="HomeG"></abbr>
+		   <div>
+          <input class="input is-small is-focused" style="width:40px;" [(ngModel)]="fixture.homeScore" type="number" id="name" name="name" required minlength="0" maxlength="2" placeholder="0" size="2">
+	       </div>
+	    </td>
+         <td><abbr title="AwayG"></abbr>
+		    <div>
+		<input class="input is-small is-focused" style="width:40px" [(ngModel)]="fixture.awayScore" type="number" id="name" name="name" required minlength="0" maxlength="2" placeholder="0" size="2">
+            </div>
+	    </td>
         <td><abbr title="Away">{{fixture.away}}</abbr></td>
-    </tr>
+      </tr>
+   	</tbody>
 
-</tbody>
-</table>
-</div>
+  </table>
+
+	<!-- buttons -->
+  <div class="buttonwrapper">
+  	<button class="button" (click)="matchResultsUpdateTable(this.fixtures)">update</button>
+  	<button class="button" (click)="reset()">reset</button>
+  </div>
 
 </div>

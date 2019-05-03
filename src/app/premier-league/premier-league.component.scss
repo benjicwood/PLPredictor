@@ -1,47 +1,31 @@
-body {
-
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 1024px;
-
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-
-  /* Set up positioning */
-  position: fixed;
-  margin: 0;
-  left: 0;
-}
-
 .overlay {
-    position: fixed;
-
-    min-height: 100%;
-    min-width: 1024px;
-
-    position: fixed;
-   // margin-top: 20px;
-    left: 0;
-
+   height: auto;
     width: 100%;
-    height: auto;
-
+    left: 0;
     background: #0d449b;
-    z-index: 10;
     overflow-y: scroll;
 }
 
-.table {
-    background-color: white;
+.league-table {
+    background-color: whitesmoke;
     color: #363636;
     border-collapse: collapse;
-    margin: 0 auto;
+    margin: 10px 10px 35px 10px;
+    font-family: 'Noto Sans', sans-serif;
+    float: left;
+  }
+
+  .fixtures-table {
+    background-color: whitesmoke;
+    color: #363636;
+    border-collapse: collapse;
+    margin: 10px;
     font-family: 'Noto Sans', sans-serif;
   }
 
-  .table td,
-  .table th {
+
+  td,
+  th {
     border: 1px solid #dbdbdb;
     border-width: 0 0 1px;
     padding: 0.5em 0.75em;
@@ -49,32 +33,21 @@ body {
     text-decoration: none;
   }
 
-  .table thead {
+  thead {
     background-color: transparent;
   }
 
-  .table thead td,
-  .table thead th {
+ thead td,
+ thead th {
     border-width: 0 0 2px;
     color: #363636;
     text-decoration: none;
   }
-
-.leaguetable {
-    width:800px;
-
-}
-
-.title {
-  text-align: center;
-  font-family: 'Noto Sans', sans-serif;
-}
 
 .buttonwrapper {
   text-align: center;
 }
 
 .button {
-  margin:auto;
-  display: block;
+  margin: 2px;
 }
