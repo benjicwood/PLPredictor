@@ -1,13 +1,13 @@
 body {
-  background-color: #0d449b;
-
+ // background-color: #0d449b;
+ width: 100%;
+ height: 100%;
+background: linear-gradient(#0d449b, 50%, whitesmoke 50%);
   /* Set rules to fill background */
-  min-height: 100%;
   min-width: 1024px;
 
   /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
+
 
   /* Set up positioning */
   position: fixed;
@@ -23,5 +23,50 @@ body {
 }
 
 .league-logo {
-	margin: 20px 0 0 30px;
+   margin: 20px;
+}
+
+.league-box {
+  background: whitesmoke;
+  position: absolute;
+  left: 492px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  align-content: center;
+
+}
+.one {
+  grid-column: 1;
+  grid-row: 1 / 4;
+  background-image: url('/assets/img/premier-league-logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.two {
+  grid-column: 2;
+  grid-row: 1 / 3;
+}
+.three {
+  grid-column: 3;
+  grid-row: 1 / 3 ;
+}
+.four {
+  grid-column: 2;
+  grid-row: 3;
+}
+.five {
+  grid-column: 3;
+  grid-row: 3;
+}
+.six {
+  grid-column: 1 / 4;
+  grid-row: 4;
 }
