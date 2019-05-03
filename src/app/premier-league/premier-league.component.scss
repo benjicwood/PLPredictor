@@ -1,0 +1,53 @@
+.overlay {
+   height: auto;
+    width: 100%;
+    left: 0;
+    background: #0d449b;
+    overflow-y: scroll;
+}
+
+.league-table {
+    background-color: whitesmoke;
+    color: #363636;
+    border-collapse: collapse;
+    margin: 10px 10px 35px 10px;
+    font-family: 'Noto Sans', sans-serif;
+    float: left;
+  }
+
+  .fixtures-table {
+    background-color: whitesmoke;
+    color: #363636;
+    border-collapse: collapse;
+    margin: 10px;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+
+  td,
+  th {
+    border: 1px solid #dbdbdb;
+    border-width: 0 0 1px;
+    padding: 0.5em 0.75em;
+    vertical-align: top;
+    text-decoration: none;
+  }
+
+  thead {
+    background-color: transparent;
+  }
+
+ thead td,
+ thead th {
+    border-width: 0 0 2px;
+    color: #363636;
+    text-decoration: none;
+  }
+
+.buttonwrapper {
+  text-align: center;
+}
+
+.button {
+  margin: 2px;
+}
