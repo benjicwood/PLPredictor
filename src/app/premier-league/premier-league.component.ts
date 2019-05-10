@@ -1,8 +1,5 @@
 import { Component } from '@angular/core'
 
-import { FixturesComponent } from '../fixtures'
-
-
 @Component({
   selector: 'app-premier-league',
   templateUrl: './premier-league.component.html',
