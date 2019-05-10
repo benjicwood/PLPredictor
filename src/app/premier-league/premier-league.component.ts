@@ -1,5 +1,8 @@
 import { Component } from '@angular/core'
 
+import { FixturesComponent } from '../fixtures'
+
+
 @Component({
   selector: 'app-premier-league',
   templateUrl: './premier-league.component.html',
@@ -9,6 +12,8 @@ import { Component } from '@angular/core'
 export class PremierLeagueComponent {
 
   public title: string = 'PLPredictor'
+  public position: number = 0
+
   public league: object[] = [
     { team: 'Arsenal', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
     { team: 'Bournemouth', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
@@ -43,6 +48,19 @@ export class PremierLeagueComponent {
     { home: 'Brighton and Hove Albion', homeScore: null, awayScore: null, away: 'Southampton' },
     { home: 'Burnley', homeScore: null, awayScore: null, away: 'Cardiff City' },
     { home: 'Fulham', homeScore: null, awayScore: null, away: 'Huddersfield Town' }
+  ]
+
+  public fixtures2: object[] = [
+    { home: 'Manchester United', homeScore: null, awayScore: null, away: 'Crystal Palace' },
+    { home: 'Fulham', homeScore: null, awayScore: null, away: 'Arsenal' },
+    { home: 'Newcastle United', homeScore: null, awayScore: null, away: 'Leicester City' },
+    { home: 'Watford', homeScore: null, awayScore: null, away: 'Chelsea' },
+    { home: 'Wolverhampton Wanderers', homeScore: null, awayScore: null, away: 'Huddersfield Town' },
+    { home: 'Burnley', homeScore: null, awayScore: null, away: 'Fulham' },
+    { home: 'Liverpool', homeScore: null, awayScore: null, away: 'Manchester City' },
+    { home: 'Brighton and Hove Albion', homeScore: null, awayScore: null, away: 'Tottenham Hotspur' },
+    { home: 'West Ham United', homeScore: null, awayScore: null, away: 'Cardiff City' },
+    { home: 'Southampton', homeScore: null, awayScore: null, away: 'Bournemouth' }
   ]
 
   public sortGd(a, b): any {

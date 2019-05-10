@@ -17,8 +17,8 @@
     </thead>
 
      <tbody>
-      <tr *ngFor="let team of league">
-        <th></th>
+      <tr *ngFor="let team of league; index as i">
+        <td>{{i+1}}</td>
         <td>{{team.team}}</td>
         <td>{{team.played}}</td>
         <td>{{team.won}}</td>
@@ -39,7 +39,7 @@
         <td style="text-align:right;"><abbr title="Home">{{fixture.home}}</abbr></td>
          <td><abbr title="HomeG"></abbr>
 		   <div>
-          <input class="input is-small is-focused" style="width:40px;" [(ngModel)]="fixture.homeScore" type="number" id="name" name="name" required minlength="0" maxlength="2" placeholder="0" size="2">
+          <input class="input is-small is-focused" style="width:40px" [(ngModel)]="fixture.homeScore" type="number" id="name" name="name" required minlength="0" maxlength="2" placeholder="0" size="2">
 	       </div>
 	    </td>
          <td><abbr title="AwayG"></abbr>
@@ -58,5 +58,33 @@
   	<button class="button" (click)="matchResultsUpdateTable(this.fixtures)">update</button>
   	<button class="button" (click)="reset()">reset</button>
   </div>
+
+  <table class="fixtures-table">
+
+   <tbody>
+	    <tr *ngFor="let fixture of fixtures2">
+	   <td style="text-align:right;"><abbr title="Home">{{fixture.home}}</abbr></td>
+	    <td><abbr title="HomeG"></abbr>
+		 <div>
+		<input class="input is-small is-focused" style="width:40px" [(ngModel)]="fixture.homeScore" type="number" id="name" name="name" required minlength="0" maxlength="2" placeholder="0" size="2">
+		</div>
+	  </td>
+	    <td><abbr title="AwayG"></abbr>
+		  <div>
+	   <input class="input is-small is-focused" style="width:40px" [(ngModel)]="fixture.awayScore" type="number" id="name" name="name" required minlength="0" maxlength="2" placeholder="0" size="2">
+		  </div>
+	  </td>
+	   <td><abbr title="Away">{{fixture.away}}</abbr></td>
+	 </tr>
+	   </tbody>
+
+  </table>
+
+   <!-- buttons -->
+  <div class="buttonwrapper">
+   <button class="button" (click)="matchResultsUpdateTable(this.fixtures2)">update</button>
+   <button class="button" (click)="reset()">reset</button>
+  </div>
+
 
 </div>
