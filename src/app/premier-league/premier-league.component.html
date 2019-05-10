@@ -30,6 +30,9 @@
      </tbody>
 
   </table>
+   <div style="float:left; position:absolute; padding-top:900px;">
+  <button class="button" (click)="reset()">reset</button>
+  </div>
 
 	<!-- fixtures -->
   <table class="fixtures-table">
@@ -53,10 +56,11 @@
 
   </table>
 
+
 	<!-- buttons -->
   <div class="buttonwrapper">
   	<button class="button" (click)="matchResultsUpdateTable(this.fixtures)">update</button>
-  	<button class="button" (click)="reset()">reset</button>
+
   </div>
 
   <table class="fixtures-table">
@@ -83,7 +87,6 @@
    <!-- buttons -->
   <div class="buttonwrapper">
    <button class="button" (click)="matchResultsUpdateTable(this.fixtures2)">update</button>
-   <button class="button" (click)="reset()">reset</button>
   </div>
 
 
