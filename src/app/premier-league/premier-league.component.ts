@@ -13,20 +13,20 @@ export class PremierLeagueComponent {
 
   public league: object[] = [
     { team: 'Arsenal', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
+    { team: 'Aston Villa', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
     { team: 'Bournemouth', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
     { team: 'Brighton and Hove Albion', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
     { team: 'Burnley', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
-    { team: 'Cardiff City', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
     { team: 'Chelsea', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
     { team: 'Crystal Palace', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
     { team: 'Everton', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
-    { team: 'Fulham', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
-    { team: 'Huddersfield Town', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
     { team: 'Leicester City', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
     { team: 'Liverpool', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
     { team: 'Manchester City', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
     { team: 'Manchester United', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
     { team: 'Newcastle United', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
+    { team: 'Norwich City', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
+    { team: 'Sheffield United', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
     { team: 'Southampton', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
     { team: 'Tottenham Hotspur', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
     { team: 'Watford', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
@@ -43,20 +43,20 @@ export class PremierLeagueComponent {
     { home: 'West Ham United', homeScore: null, awayScore: null, away: 'Bournemouth' },
     { home: 'Crystal Palace', homeScore: null, awayScore: null, away: 'Newcastle United' },
     { home: 'Brighton and Hove Albion', homeScore: null, awayScore: null, away: 'Southampton' },
-    { home: 'Burnley', homeScore: null, awayScore: null, away: 'Cardiff City' },
-    { home: 'Fulham', homeScore: null, awayScore: null, away: 'Huddersfield Town' }
+    { home: 'Burnley', homeScore: null, awayScore: null, away: 'Aston Villa' },
+    { home: 'Norwich City', homeScore: null, awayScore: null, away: 'Sheffield United' }
   ]
 
   public fixtures2: object[] = [
     { home: 'Manchester United', homeScore: null, awayScore: null, away: 'Crystal Palace' },
-    { home: 'Fulham', homeScore: null, awayScore: null, away: 'Arsenal' },
+    { home: 'Norwich City', homeScore: null, awayScore: null, away: 'Arsenal' },
     { home: 'Newcastle United', homeScore: null, awayScore: null, away: 'Leicester City' },
     { home: 'Watford', homeScore: null, awayScore: null, away: 'Chelsea' },
-    { home: 'Wolverhampton Wanderers', homeScore: null, awayScore: null, away: 'Huddersfield Town' },
+    { home: 'Wolverhampton Wanderers', homeScore: null, awayScore: null, away: 'Sheffield United' },
     { home: 'Burnley', homeScore: null, awayScore: null, away: 'Fulham' },
     { home: 'Liverpool', homeScore: null, awayScore: null, away: 'Manchester City' },
     { home: 'Brighton and Hove Albion', homeScore: null, awayScore: null, away: 'Tottenham Hotspur' },
-    { home: 'West Ham United', homeScore: null, awayScore: null, away: 'Cardiff City' },
+    { home: 'West Ham United', homeScore: null, awayScore: null, away: 'Aston Villa' },
     { home: 'Southampton', homeScore: null, awayScore: null, away: 'Bournemouth' }
   ]
 
@@ -118,20 +118,20 @@ export class PremierLeagueComponent {
   public reset() {
     this.league = [
       { team: 'Arsenal', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
+      { team: 'Aston Villa', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
       { team: 'Bournemouth', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
       { team: 'Brighton and Hove Albion', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
       { team: 'Burnley', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
-      { team: 'Cardiff City', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
       { team: 'Chelsea', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
       { team: 'Crystal Palace', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
       { team: 'Everton', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
-      { team: 'Fulham', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
-      { team: 'Huddersfield Town', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
       { team: 'Leicester City', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
       { team: 'Liverpool', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
       { team: 'Manchester City', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
       { team: 'Manchester United', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
       { team: 'Newcastle United', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
+      { team: 'Norwich City', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
+      { team: 'Sheffield United', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
       { team: 'Southampton', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
       { team: 'Tottenham Hotspur', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
       { team: 'Watford', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
