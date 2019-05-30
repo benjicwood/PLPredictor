@@ -10,6 +10,7 @@ export class PremierLeagueComponent {
 
   public title: string = 'PLPredictor'
   public position: number = 0
+  public gameweek: number = 0
 
   public league: object[] = [
     { team: 'Arsenal', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
@@ -35,30 +36,33 @@ export class PremierLeagueComponent {
   ]
 
   public fixtures: object[] = [
-    { home: 'Manchester United', homeScore: null, awayScore: null, away: 'Liverpool' },
-    { home: 'Tottenham Hotspur', homeScore: null, awayScore: null, away: 'Arsenal' },
-    { home: 'Manchester City', homeScore: null, awayScore: null, away: 'Chelsea' },
-    { home: 'Everton', homeScore: null, awayScore: null, away: 'Wolverhampton Wanderers' },
-    { home: 'Leicester City', homeScore: null, awayScore: null, away: 'Watford' },
-    { home: 'West Ham United', homeScore: null, awayScore: null, away: 'Bournemouth' },
-    { home: 'Crystal Palace', homeScore: null, awayScore: null, away: 'Newcastle United' },
-    { home: 'Brighton and Hove Albion', homeScore: null, awayScore: null, away: 'Southampton' },
-    { home: 'Burnley', homeScore: null, awayScore: null, away: 'Aston Villa' },
-    { home: 'Norwich City', homeScore: null, awayScore: null, away: 'Sheffield United' }
+    [
+      { home: 'Manchester United', homeScore: null, awayScore: null, away: 'Liverpool' },
+      { home: 'Tottenham Hotspur', homeScore: null, awayScore: null, away: 'Arsenal' },
+      { home: 'Manchester City', homeScore: null, awayScore: null, away: 'Chelsea' },
+      { home: 'Everton', homeScore: null, awayScore: null, away: 'Wolverhampton Wanderers' },
+      { home: 'Leicester City', homeScore: null, awayScore: null, away: 'Watford' },
+      { home: 'West Ham United', homeScore: null, awayScore: null, away: 'Bournemouth' },
+      { home: 'Crystal Palace', homeScore: null, awayScore: null, away: 'Newcastle United' },
+      { home: 'Brighton and Hove Albion', homeScore: null, awayScore: null, away: 'Southampton' },
+      { home: 'Burnley', homeScore: null, awayScore: null, away: 'Aston Villa' },
+      { home: 'Norwich City', homeScore: null, awayScore: null, away: 'Sheffield United' }
+    ],
+    [
+      { home: 'Manchester United', homeScore: null, awayScore: null, away: 'Crystal Palace' },
+      { home: 'Norwich City', homeScore: null, awayScore: null, away: 'Arsenal' },
+      { home: 'Newcastle United', homeScore: null, awayScore: null, away: 'Leicester City' },
+      { home: 'Watford', homeScore: null, awayScore: null, away: 'Chelsea' },
+      { home: 'Wolverhampton Wanderers', homeScore: null, awayScore: null, away: 'Sheffield United' },
+      { home: 'Burnley', homeScore: null, awayScore: null, away: 'Everton' },
+      { home: 'Liverpool', homeScore: null, awayScore: null, away: 'Manchester City' },
+      { home: 'Brighton and Hove Albion', homeScore: null, awayScore: null, away: 'Tottenham Hotspur' },
+      { home: 'West Ham United', homeScore: null, awayScore: null, away: 'Aston Villa' },
+      { home: 'Southampton', homeScore: null, awayScore: null, away: 'Bournemouth' }
+    ]
   ]
 
-  public fixtures2: object[] = [
-    { home: 'Manchester United', homeScore: null, awayScore: null, away: 'Crystal Palace' },
-    { home: 'Norwich City', homeScore: null, awayScore: null, away: 'Arsenal' },
-    { home: 'Newcastle United', homeScore: null, awayScore: null, away: 'Leicester City' },
-    { home: 'Watford', homeScore: null, awayScore: null, away: 'Chelsea' },
-    { home: 'Wolverhampton Wanderers', homeScore: null, awayScore: null, away: 'Sheffield United' },
-    { home: 'Burnley', homeScore: null, awayScore: null, away: 'Fulham' },
-    { home: 'Liverpool', homeScore: null, awayScore: null, away: 'Manchester City' },
-    { home: 'Brighton and Hove Albion', homeScore: null, awayScore: null, away: 'Tottenham Hotspur' },
-    { home: 'West Ham United', homeScore: null, awayScore: null, away: 'Aston Villa' },
-    { home: 'Southampton', homeScore: null, awayScore: null, away: 'Bournemouth' }
-  ]
+  // public fixtures2: object[] =
 
   public sortGd(a, b): any {
     const aGoalDiff = a.gd
@@ -112,7 +116,8 @@ export class PremierLeagueComponent {
         }
       }
 
-    return newLeague.sort(this.sortGd).sort(this.sortLeague).reverse();
+    this.gameweek += 1
+    return newLeague.sort(this.sortGd).sort(this.sortLeague).reverse()
   }
 
   public reset() {
@@ -138,6 +143,35 @@ export class PremierLeagueComponent {
       { team: 'West Ham United', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
       { team: 'Wolverhampton Wanderers', played: 0, won: 0, drawn: 0, lost: 0, points: 0, gd: 0 },
     ]
+
+    this.fixtures = [
+      [
+        { home: 'Manchester United', homeScore: null, awayScore: null, away: 'Liverpool' },
+        { home: 'Tottenham Hotspur', homeScore: null, awayScore: null, away: 'Arsenal' },
+        { home: 'Manchester City', homeScore: null, awayScore: null, away: 'Chelsea' },
+        { home: 'Everton', homeScore: null, awayScore: null, away: 'Wolverhampton Wanderers' },
+        { home: 'Leicester City', homeScore: null, awayScore: null, away: 'Watford' },
+        { home: 'West Ham United', homeScore: null, awayScore: null, away: 'Bournemouth' },
+        { home: 'Crystal Palace', homeScore: null, awayScore: null, away: 'Newcastle United' },
+        { home: 'Brighton and Hove Albion', homeScore: null, awayScore: null, away: 'Southampton' },
+        { home: 'Burnley', homeScore: null, awayScore: null, away: 'Aston Villa' },
+        { home: 'Norwich City', homeScore: null, awayScore: null, away: 'Sheffield United' }
+      ],
+      [
+        { home: 'Manchester United', homeScore: null, awayScore: null, away: 'Crystal Palace' },
+        { home: 'Norwich City', homeScore: null, awayScore: null, away: 'Arsenal' },
+        { home: 'Newcastle United', homeScore: null, awayScore: null, away: 'Leicester City' },
+        { home: 'Watford', homeScore: null, awayScore: null, away: 'Chelsea' },
+        { home: 'Wolverhampton Wanderers', homeScore: null, awayScore: null, away: 'Sheffield United' },
+        { home: 'Burnley', homeScore: null, awayScore: null, away: 'Everton' },
+        { home: 'Liverpool', homeScore: null, awayScore: null, away: 'Manchester City' },
+        { home: 'Brighton and Hove Albion', homeScore: null, awayScore: null, away: 'Tottenham Hotspur' },
+        { home: 'West Ham United', homeScore: null, awayScore: null, away: 'Aston Villa' },
+        { home: 'Southampton', homeScore: null, awayScore: null, away: 'Bournemouth' }
+      ]
+    ]
+
+    this.gameweek = 0
   }
 
 }
