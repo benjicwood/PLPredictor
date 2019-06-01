@@ -30,9 +30,6 @@
      </tbody>
 
   </table>
-   <div style="float:left; position:absolute; padding-top:900px;">
-  <button class="button" (click)="reset()">reset</button>
-  </div>
 
 	<!-- fixtures -->
   <table class="fixtures-table">
@@ -58,9 +55,9 @@
 
 
 	<!-- buttons -->
+
   <div class="buttonwrapper">
-  	<button class="button" (click)="matchResultsUpdateTable(this.fixtures[gameweek])">update</button>
-
-  </div>
-
+      <button class="button is-rounded" (click)="matchResultsUpdateTable(this.fixtures[gameweek])">update table</button>
+      <button class="button is-rounded" (click)="reset()">reset table</button>
+    </div>
 </div>

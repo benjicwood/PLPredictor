@@ -23,7 +23,9 @@
     font-family: 'Noto Sans', sans-serif;
   }
 
-
+  tr:nth-child(even) {background: whitesmoke}
+  tr:nth-child(odd) {background: white} 
+  
   td,
   th {
     border: 1px solid #dbdbdb;
