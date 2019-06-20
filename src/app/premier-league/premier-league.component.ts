@@ -43,7 +43,7 @@ export class PremierLeagueComponent {
       { home: 'Burnley', homeScore: null, awayScore: null, away: 'Southampton' },
       { home: 'Crystal Palace', homeScore: null, awayScore: null, away: 'Everton' },
       { home: 'Leicester City', homeScore: null, awayScore: null, away: 'Wolverhampton Wanderers' },
-      { home: 'Watford', homeScore: null, awayScore: null, away: 'Brighton & Hove Albion' },
+      { home: 'Watford', homeScore: null, awayScore: null, away: 'Brighton and Hove Albion' },
       { home: 'Tottenham Hotspur', homeScore: null, awayScore: null, away: 'Aston Villa' },
       { home: 'Newcastle United', homeScore: null, awayScore: null, away: 'Arsenal' },
       { home: 'Manchester United', homeScore: null, awayScore: null, away: 'Chelsea' }
@@ -51,7 +51,7 @@ export class PremierLeagueComponent {
     [
       { home: 'Arsenal', homeScore: null, awayScore: null, away: 'Burnley' },
       { home: 'Aston Villa', homeScore: null, awayScore: null, away: 'Bournemouth' },
-      { home: 'Brighton & Hove Albion', homeScore: null, awayScore: null, away: 'West Ham United' },
+      { home: 'Brighton and Hove Albion', homeScore: null, awayScore: null, away: 'West Ham United' },
       { home: 'Chelsea', homeScore: null, awayScore: null, away: 'Leicester City' },
       { home: 'Everton', homeScore: null, awayScore: null, away: 'Watford' },
       { home: 'Manchester City', homeScore: null, awayScore: null, away: 'Tottenham Hotspur' },
@@ -63,7 +63,7 @@ export class PremierLeagueComponent {
     [
       { home: 'Aston Villa', homeScore: null, awayScore: null, away: 'Everton' },
       { home: 'Bournemouth', homeScore: null, awayScore: null, away: 'Manchester City' },
-      { home: 'Brighton & Hove Albion', homeScore: null, awayScore: null, away: 'Southampton' },
+      { home: 'Brighton and Hove Albion', homeScore: null, awayScore: null, away: 'Southampton' },
       { home: 'Liverpool', homeScore: null, awayScore: null, away: 'Arsenal' },
       { home: 'Manchester United', homeScore: null, awayScore: null, away: 'Crystal Palace' },
       { home: 'Norwich City', homeScore: null, awayScore: null, away: 'Chelsea' },
@@ -79,7 +79,7 @@ export class PremierLeagueComponent {
       { home: 'Crystal Palace', homeScore: null, awayScore: null, away: 'Aston Villa' },
       { home: 'Everton', homeScore: null, awayScore: null, away: 'Wolverhampton Wanderers' },
       { home: 'Leicester City', homeScore: null, awayScore: null, away: 'Bournemouth' },
-      { home: 'Manchester City', homeScore: null, awayScore: null, away: 'Brighton & Hove Albion' },
+      { home: 'Manchester City', homeScore: null, awayScore: null, away: 'Brighton and Hove Albion' },
       { home: 'Newcastle United', homeScore: null, awayScore: null, away: 'Watford' },
       { home: 'Southampton', homeScore: null, awayScore: null, away: 'Manchester United' },
       { home: 'West Ham United', homeScore: null, awayScore: null, away: 'Norwich City' }
