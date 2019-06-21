@@ -1,6 +1,6 @@
 # PLPredictor
 
-League Prediction App for the English Premier League
+League Prediction App for the English Premier League.
 
 ## Development server
 
