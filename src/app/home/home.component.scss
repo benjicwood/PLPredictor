@@ -16,10 +16,12 @@ body {
 }
 
 nav {
+  max-height: 50%;
 	display: grid;
 	gap: 1rem;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(2, 50vh);
+  grid-template-rows: repeat(2, 50vh);
+  background-color :whitesmoke;
 }
 
 img {
