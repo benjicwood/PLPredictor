@@ -83,8 +83,58 @@ export class PremierLeagueComponent {
       { home: 'Newcastle United', homeScore: null, awayScore: null, away: 'Watford' },
       { home: 'Southampton', homeScore: null, awayScore: null, away: 'Manchester United' },
       { home: 'West Ham United', homeScore: null, awayScore: null, away: 'Norwich City' }
-    ]
+    ],
+    [
+      { home: 'Liverpool', homeScore: null, awayScore: null, away: 'Newcastle United' },
+      { home: 'Manchester United', homeScore: null, awayScore: null, away: 'Leicester City' },
+      { home: 'Sheffield United', homeScore: null, awayScore: null, away: 'Southampton' },
+      { home: 'Brighton and Hove Albion', homeScore: null, awayScore: null, away: 'Burnley' },
+      { home: 'Wolverhampton Wanderers', homeScore: null, awayScore: null, away: 'Chelsea' },
+      { home: 'Tottenham Hotspur', homeScore: null, awayScore: null, away: 'Crystal Palace' },
+      { home: 'Norwich City', homeScore: null, awayScore: null, away: 'Manchester City' },
+      { home: 'Bournemouth', homeScore: null, awayScore: null, away: 'Everton' },
+      { home: 'Watford', homeScore: null, awayScore: null, away: 'Arsenal' },
+      { home: 'Aston Villa', homeScore: null, awayScore: null, away: 'West Ham United' }
+    ],
+    [
+      { home: 'Southampton', homeScore: null, awayScore: null, away: 'Bournemouth' },
+      { home: 'Leicester City', homeScore: null, awayScore: null, away: 'Tottenham Hotspur' },
+      { home: 'Burnley', homeScore: null, awayScore: null, away: 'Norwich City' },
+      { home: 'Everton', homeScore: null, awayScore: null, away: 'Sheffield United' },
+      { home: 'Crystal Palace', homeScore: null, awayScore: null, away: 'Wolverhampton Wanderers' },
+      { home: 'Manchester City', homeScore: null, awayScore: null, away: 'Watford' },
+      { home: 'Newcastle United', homeScore: null, awayScore: null, away: 'Brighton and Hove Albion' },
+      { home: 'West Ham United', homeScore: null, awayScore: null, away: 'Manchester United' },
+      { home: 'Arsenal', homeScore: null, awayScore: null, away: 'Aston Villa' },
+      { home: 'Chelsea', homeScore: null, awayScore: null, away: 'Liverpool' }
+    ],
+    [
+      { home: 'Sheffield United', homeScore: null, awayScore: null, away: 'Liverpool' },
+      { home: 'Crystal Palace', homeScore: null, awayScore: null, away: 'Norwich City' },
+      { home: 'Aston Villa', homeScore: null, awayScore: null, away: 'Burnley' },
+      { home: 'Bournemouth', homeScore: null, awayScore: null, away: 'West Ham United' },
+      { home: 'Wolverhampton Wanderers', homeScore: null, awayScore: null, away: 'Watford' },
+      { home: 'Tottenham Hotspur', homeScore: null, awayScore: null, away: 'Southampton' },
+      { home: 'Chelsea', homeScore: null, awayScore: null, away: 'Brighton and Hove Albion' },
+      { home: 'Leicester City', homeScore: null, awayScore: null, away: 'Newcastle United' },
+      { home: 'Everton', homeScore: null, awayScore: null, away: 'Manchester City' },
+      { home: 'Manchester United', homeScore: null, awayScore: null, away: 'Arsenal' }
+    ],
+    [
+      { home: 'Norwich City', homeScore: null, awayScore: null, away: 'Aston Villa' },
+      { home: 'Southampton', homeScore: null, awayScore: null, away: 'Chelsea' },
+      { home: 'West Ham United', homeScore: null, awayScore: null, away: 'Crystal Palace' },
+      { home: 'Watford', homeScore: null, awayScore: null, away: 'Sheffield United' },
+      { home: 'Burnley', homeScore: null, awayScore: null, away: 'Everton' },
+      { home: 'Manchester City', homeScore: null, awayScore: null, away: 'Wolverhampton Wanderers' },
+      { home: 'Brighton and Hove Albion', homeScore: null, awayScore: null, away: 'Tottenham Hotspur' },
+      { home: 'Liverpool', homeScore: null, awayScore: null, away: 'Leicester City' },
+      { home: 'Arsenal', homeScore: null, awayScore: null, away: 'Bournemouth' },
+      { home: 'Newcastle United', homeScore: null, awayScore: null, away: 'Manchester United' }
+    ],
   ]
+
+  // 8 game weeks
 
   // public fixtures2: object[] =
 
