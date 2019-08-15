@@ -51,13 +51,15 @@
       </tr>
    	</tbody>
 
+	<div class="buttonwrapper">
+	    <button class="button is-rounded" (click)="matchResultsUpdateTable(this.fixtures[gameweek])">update table</button>
+	    <button class="button is-rounded" (click)="reset()">reset table</button>
+	  </div>
+
   </table>
 
 
 	<!-- buttons -->
 
-  <div class="buttonwrapper">
-      <button class="button is-rounded" (click)="matchResultsUpdateTable(this.fixtures[gameweek])">update table</button>
-      <button class="button is-rounded" (click)="reset()">reset table</button>
-    </div>
+
 </div>
