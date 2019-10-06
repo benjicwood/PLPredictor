@@ -13,26 +13,26 @@ export class PremierLeagueComponent {
   public gameweek: number = 0
 
   public league: object[] = [
-    { team: 'Liverpool', played: 7, won: 7, drawn: 0, lost: 0, gd: 13, points: 21 },
-    { team: 'Manchester City', played: 7, won: 5, drawn: 1, lost: 1, gd: 20, points: 16 },
-    { team: 'Leicester City', played: 7, won: 4, drawn: 2, lost: 1, gd: 8, points: 14 },
-    { team: 'Arsenal', played: 7, won: 3, drawn: 3, lost: 1, gd: 1, points: 12 },
-    { team: 'West Ham United', played: 7, won: 3, drawn: 3, lost: 1, gd: 1, points: 12 },
-    { team: 'Tottenham Hotspur', played: 7, won: 3, drawn: 2, lost: 2, gd: 5, points: 11 },
-    { team: 'Chelsea', played: 7, won: 3, drawn: 2, lost: 2, gd: 1, points: 11 },
-    { team: 'Bournemouth', played: 7, won: 3, drawn: 2, lost: 2, gd: 1, points: 11 },
-    { team: 'Crystal Palace', played: 7, won: 3, drawn: 2, lost: 2, gd: -1, points: 11 },
-    { team: 'Manchester United', played: 7, won: 2, drawn: 3, lost: 2, gd: 2, points: 9 },
-    { team: 'Burnley', played: 7, won: 2, drawn: 3, lost: 2, gd: 1, points: 9 },
-    { team: 'Sheffield United', played: 7, won: 2, drawn: 2, lost: 3, gd: 0, points: 8 },
-    { team: 'Wolverhampton Wanderers', played: 7, won: 1, drawn: 4, lost: 2, gd: -2, points: 7 },
-    { team: 'Southampton', played: 7, won: 2, drawn: 1, lost: 4, gd: -4, points: 7 },
-    { team: 'Everton', played: 7, won: 2, drawn: 1, lost: 4, gd: -6, points: 7 },
-    { team: 'Brighton & Hove Albion', played: 7, won: 1, drawn: 3, lost: 3, gd: -5, points: 6 },
-    { team: 'Norwich City', played: 7, won: 2, drawn: 0, lost: 5, gd: -7, points: 6 },
-    { team: 'Aston Villa', played: 7, won: 1, drawn: 2, lost: 4, gd: -3, points: 5 },
-    { team: 'Newcastle United', played: 7, won: 1, drawn: 2, lost: 4, gd: -9, points: 5 },
-    { team: 'Watford', played: 7, won: 0, drawn: 2, lost: 5, gd: -16, points: 2 },
+    { team: 'Liverpool', played: 8, won: 8, drawn: 0, lost: 0, gd: 14, points: 24 },
+    { team: 'Manchester City', played: 8, won: 5, drawn: 1, lost: 2, gd: 18, points: 16 },
+    { team: 'Arsenal', played: 8, won: 4, drawn: 3, lost: 1, gd: 2, points: 15 },
+    { team: 'Leicester City', played: 8, won: 4, drawn: 2, lost: 2, gd: 7, points: 14 },
+    { team: 'Chelsea', played: 8, won: 4, drawn: 2, lost: 2, gd: 4, points: 14 },
+    { team: 'Crystal Palace', played: 8, won: 4, drawn: 2, lost: 2, gd: 0, points: 14 },
+    { team: 'Burnley', played: 8, won: 3, drawn: 3, lost: 2, gd: 2, points: 12 },
+    { team: 'West Ham United', played: 8, won: 3, drawn: 3, lost: 2, gd: 0, points: 12 },
+    { team: 'Tottenham Hotspur', played: 8, won: 3, drawn: 2, lost: 3, gd: 2, points: 11 },
+    { team: 'Bournemouth', played: 8, won: 3, drawn: 2, lost: 3, gd: 0, points: 11 },
+    { team: 'Wolverhampton Wanderers', played: 8, won: 2, drawn: 4, lost: 2, gd: 0, points: 10 },
+    { team: 'Manchester United', played: 8, won: 2, drawn: 3, lost: 3, gd: 1, points: 9 },
+    { team: 'Sheffield United', played: 8, won: 2, drawn: 3, lost: 3, gd: 0, points: 9 },
+    { team: 'Brighton & Hove Albion', played: 8, won: 2, drawn: 3, lost: 3, gd: -2, points: 9 },
+    { team: 'Aston Villa', played: 8, won: 2, drawn: 2, lost: 4, gd: 1, points: 8 },
+    { team: 'Newcastle United', played: 8, won: 2, drawn: 2, lost: 4, gd: -8, points: 8 },
+    { team: 'Southampton', played: 8, won: 2, drawn: 1, lost: 5, gd: -7, points: 7 },
+    { team: 'Everton', played: 8, won: 2, drawn: 1, lost: 5, gd: -7, points: 7 },
+    { team: 'Norwich City', played: 8, won: 2, drawn: 0, lost: 6, gd: -11, points: 6 },
+    { team: 'Watford', played: 8, won: 0, drawn: 3, lost: 5, gd: -16, points: 3 },
   ]
 
   public fixtures: object[] = [
@@ -121,7 +121,6 @@ export class PremierLeagueComponent {
       { home: 'Everton', homeScore: null, awayScore: null, away: 'Manchester City' },
       { home: 'Manchester United', homeScore: null, awayScore: null, away: 'Arsenal' }
     ],
-     */
     [
       { home: 'Norwich City', homeScore: null, awayScore: null, away: 'Aston Villa' },
       { home: 'Southampton', homeScore: null, awayScore: null, away: 'Chelsea' },
@@ -134,6 +133,7 @@ export class PremierLeagueComponent {
       { home: 'Arsenal', homeScore: null, awayScore: null, away: 'Bournemouth' },
       { home: 'Newcastle United', homeScore: null, awayScore: null, away: 'Manchester United' }
     ],
+    */
     [
       { home: 'Everton', homeScore: null, awayScore: null, away: 'West Ham United' },
       { home: 'Aston Villa', homeScore: null, awayScore: null, away: 'Brighton & Hove Albion' },
@@ -298,26 +298,26 @@ export class PremierLeagueComponent {
 
   public reset() {
     this.league = [
-      { team: 'Liverpool', played: 7, won: 7, drawn: 0, lost: 0, gd: 13, points: 21 },
-      { team: 'Manchester City', played: 7, won: 5, drawn: 1, lost: 1, gd: 20, points: 16 },
-      { team: 'Leicester City', played: 7, won: 4, drawn: 2, lost: 1, gd: 8, points: 14 },
-      { team: 'Arsenal', played: 7, won: 3, drawn: 3, lost: 1, gd: 1, points: 12 },
-      { team: 'West Ham United', played: 7, won: 3, drawn: 3, lost: 1, gd: 1, points: 12 },
-      { team: 'Tottenham Hotspur', played: 7, won: 3, drawn: 2, lost: 2, gd: 5, points: 11 },
-      { team: 'Chelsea', played: 7, won: 3, drawn: 2, lost: 2, gd: 1, points: 11 },
-      { team: 'Bournemouth', played: 7, won: 3, drawn: 2, lost: 2, gd: 1, points: 11 },
-      { team: 'Crystal Palace', played: 7, won: 3, drawn: 2, lost: 2, gd: -1, points: 11 },
-      { team: 'Manchester United', played: 7, won: 2, drawn: 3, lost: 2, gd: 2, points: 9 },
-      { team: 'Burnley', played: 7, won: 2, drawn: 3, lost: 2, gd: 1, points: 9 },
-      { team: 'Sheffield United', played: 7, won: 2, drawn: 2, lost: 3, gd: 0, points: 8 },
-      { team: 'Wolverhampton Wanderers', played: 7, won: 1, drawn: 4, lost: 2, gd: -2, points: 7 },
-      { team: 'Southampton', played: 7, won: 2, drawn: 1, lost: 4, gd: -4, points: 7 },
-      { team: 'Everton', played: 7, won: 2, drawn: 1, lost: 4, gd: -6, points: 7 },
-      { team: 'Brighton & Hove Albion', played: 7, won: 1, drawn: 3, lost: 3, gd: -5, points: 6 },
-      { team: 'Norwich City', played: 7, won: 2, drawn: 0, lost: 5, gd: -7, points: 6 },
-      { team: 'Aston Villa', played: 7, won: 1, drawn: 2, lost: 4, gd: -3, points: 5 },
-      { team: 'Newcastle United', played: 7, won: 1, drawn: 2, lost: 4, gd: -9, points: 5 },
-      { team: 'Watford', played: 7, won: 0, drawn: 2, lost: 5, gd: -16, points: 2 },
+      { team: 'Liverpool', played: 8, won: 8, drawn: 0, lost: 0, gd: 14, points: 24 },
+      { team: 'Manchester City', played: 8, won: 5, drawn: 1, lost: 2, gd: 18, points: 16 },
+      { team: 'Arsenal', played: 8, won: 4, drawn: 3, lost: 1, gd: 2, points: 15 },
+      { team: 'Leicester City', played: 8, won: 4, drawn: 2, lost: 2, gd: 7, points: 14 },
+      { team: 'Chelsea', played: 8, won: 4, drawn: 2, lost: 2, gd: 4, points: 14 },
+      { team: 'Crystal Palace', played: 8, won: 4, drawn: 2, lost: 2, gd: 0, points: 14 },
+      { team: 'Burnley', played: 8, won: 3, drawn: 3, lost: 2, gd: 2, points: 12 },
+      { team: 'West Ham United', played: 8, won: 3, drawn: 3, lost: 2, gd: 0, points: 12 },
+      { team: 'Tottenham Hotspur', played: 8, won: 3, drawn: 2, lost: 3, gd: 2, points: 11 },
+      { team: 'Bournemouth', played: 8, won: 3, drawn: 2, lost: 3, gd: 0, points: 11 },
+      { team: 'Wolverhampton Wanderers', played: 8, won: 2, drawn: 4, lost: 2, gd: 0, points: 10 },
+      { team: 'Manchester United', played: 8, won: 2, drawn: 3, lost: 3, gd: 1, points: 9 },
+      { team: 'Sheffield United', played: 8, won: 2, drawn: 3, lost: 3, gd: 0, points: 9 },
+      { team: 'Brighton & Hove Albion', played: 8, won: 2, drawn: 3, lost: 3, gd: -2, points: 9 },
+      { team: 'Aston Villa', played: 8, won: 2, drawn: 2, lost: 4, gd: 1, points: 8 },
+      { team: 'Newcastle United', played: 8, won: 2, drawn: 2, lost: 4, gd: -8, points: 8 },
+      { team: 'Southampton', played: 8, won: 2, drawn: 1, lost: 5, gd: -7, points: 7 },
+      { team: 'Everton', played: 8, won: 2, drawn: 1, lost: 5, gd: -7, points: 7 },
+      { team: 'Norwich City', played: 8, won: 2, drawn: 0, lost: 6, gd: -11, points: 6 },
+      { team: 'Watford', played: 8, won: 0, drawn: 3, lost: 5, gd: -16, points: 3 },
     ]
 
     /*
@@ -434,7 +434,6 @@ export class PremierLeagueComponent {
         { home: 'Everton', homeScore: null, awayScore: null, away: 'Manchester City' },
         { home: 'Manchester United', homeScore: null, awayScore: null, away: 'Arsenal' }
       ],
-	*/
       [
         { home: 'Norwich City', homeScore: null, awayScore: null, away: 'Aston Villa' },
         { home: 'Southampton', homeScore: null, awayScore: null, away: 'Chelsea' },
@@ -447,6 +446,7 @@ export class PremierLeagueComponent {
         { home: 'Arsenal', homeScore: null, awayScore: null, away: 'Bournemouth' },
         { home: 'Newcastle United', homeScore: null, awayScore: null, away: 'Manchester United' }
       ],
+      */
       [
         { home: 'Everton', homeScore: null, awayScore: null, away: 'West Ham United' },
         { home: 'Aston Villa', homeScore: null, awayScore: null, away: 'Brighton & Hove Albion' },
