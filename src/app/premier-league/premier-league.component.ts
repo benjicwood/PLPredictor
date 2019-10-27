@@ -249,7 +249,7 @@ export class PremierLeagueComponent {
       { home: 'Brighton & Hove Albion', homeScore: null, awayScore: null, away: 'Sheffield United' },
       { home: 'Newcastle United', homeScore: null, awayScore: null, away: 'Crystal Palace' },
       { home: 'Norwich City', homeScore: null, awayScore: null, away: 'Wolverhampton Wanderers' },
-      { home: 'Manchester United', homeScore: null, awayScore: null, away: 'Leicester City' },
+      { home: 'Manchester City', homeScore: null, awayScore: null, away: 'Leicester City' },
       { home: 'Watford', homeScore: null, awayScore: null, away: 'Manchester United' },
       { home: 'Tottenham Hotspur', homeScore: null, awayScore: null, away: 'Chelsea' },
       { home: 'West Ham United', homeScore: null, awayScore: null, away: 'Liverpool' } // this game is being re-arranged
@@ -499,7 +499,7 @@ export class PremierLeagueComponent {
         { home: 'Brighton & Hove Albion', homeScore: null, awayScore: null, away: 'Sheffield United' },
         { home: 'Newcastle United', homeScore: null, awayScore: null, away: 'Crystal Palace' },
         { home: 'Norwich City', homeScore: null, awayScore: null, away: 'Wolverhampton Wanderers' },
-        { home: 'Manchester United', homeScore: null, awayScore: null, away: 'Leicester City' },
+        { home: 'Manchester City', homeScore: null, awayScore: null, away: 'Leicester City' },
         { home: 'Watford', homeScore: null, awayScore: null, away: 'Manchester United' },
         { home: 'Tottenham Hotspur', homeScore: null, awayScore: null, away: 'Chelsea' },
         { home: 'West Ham United', homeScore: null, awayScore: null, away: 'Liverpool' } // this game is being re-arranged
