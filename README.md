@@ -2,7 +2,7 @@
 
 League Prediction App for the English Premier League.
 
-Updated 20/01/20
+Updated 26/01/20
 
 ## Development server
 
