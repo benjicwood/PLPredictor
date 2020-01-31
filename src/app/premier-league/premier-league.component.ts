@@ -13,7 +13,7 @@ export class PremierLeagueComponent {
   public gameweek: number = 0
 
   public league: object[] = [
-    { team: 'Liverpool', played: 23, won: 22, drawn: 1, lost: 0, gd: 39, points: 67 },
+    { team: 'Liverpool', played: 24, won: 23, drawn: 1, lost: 0, gd: 41, points: 70 },
     { team: 'Manchester City', played: 24, won: 16, drawn: 3, lost: 5, gd: 38, points: 51 },
     { team: 'Leicester City', played: 24, won: 15, drawn: 3, lost: 6, gd: 28, points: 48 },
     { team: 'Chelsea', played: 24, won: 12, drawn: 4, lost: 8, gd: 9, points: 40 },
@@ -29,7 +29,7 @@ export class PremierLeagueComponent {
     { team: 'Newcastle United', played: 24, won: 8, drawn: 6, lost: 10, gd: -12, points: 30 },
     { team: 'Brighton & Hove Albion', played: 24, won: 6, drawn: 7, lost: 11, gd: -7, points: 25 },
     { team: 'Aston Villa', played: 24, won: 7, drawn: 4, lost: 13, gd: -14, points: 25 },
-    { team: 'West Ham United', played: 23, won: 6, drawn: 5, lost: 12, gd: -11, points: 23 },
+    { team: 'West Ham United', played: 24, won: 6, drawn: 5, lost: 13, gd: -13, points: 23 },
     { team: 'Bournemouth', played: 24, won: 6, drawn: 5, lost: 13, gd: -14, points: 23 },
     { team: 'Watford', played: 24, won: 5, drawn: 8, lost: 11, gd: -15, points: 23 },
     { team: 'Norwich City', played: 24, won: 4, drawn: 5, lost: 15, gd: -23, points: 17 },
@@ -314,7 +314,7 @@ export class PremierLeagueComponent {
       { home: 'Liverpool', homeScore: null, awayScore: null, away: 'Manchester United' }
     ],
     */
-    [
+   // [
       // { home: 'Aston Villa', homeScore: null, awayScore: null, away: 'Watford' },
       // { home: 'Bournemouth', homeScore: null, awayScore: null, away: 'Brighton & Hove Albion' },
       // { home: 'Crystal Palace', homeScore: null, awayScore: null, away: 'Southampton' },
@@ -325,8 +325,8 @@ export class PremierLeagueComponent {
       // { home: 'Tottenham Hotspur', homeScore: null, awayScore: null, away: 'Norwich City' },
       // { home: 'Manchester United', homeScore: null, awayScore: null, away: 'Burnley' },
       // { home: 'Wolverhampton Wanderers', homeScore: null, awayScore: null, away: 'Liverpool' },
-      { home: 'West Ham United', homeScore: null, awayScore: null, away: 'Liverpool' }
-    ],
+     // { home: 'West Ham United', homeScore: null, awayScore: null, away: 'Liverpool' }
+    //],
     [
       { home: 'Bournemouth', homeScore: null, awayScore: null, away: 'Aston Villa' },
       { home: 'Burnley', homeScore: null, awayScore: null, away: 'Arsenal' },
@@ -491,7 +491,7 @@ export class PremierLeagueComponent {
 
   public reset() {
     this.league = [
-      { team: 'Liverpool', played: 23, won: 22, drawn: 1, lost: 0, gd: 39, points: 67 },
+      { team: 'Liverpool', played: 24, won: 23, drawn: 1, lost: 0, gd: 41, points: 70 },
       { team: 'Manchester City', played: 24, won: 16, drawn: 3, lost: 5, gd: 38, points: 51 },
       { team: 'Leicester City', played: 24, won: 15, drawn: 3, lost: 6, gd: 28, points: 48 },
       { team: 'Chelsea', played: 24, won: 12, drawn: 4, lost: 8, gd: 9, points: 40 },
@@ -507,7 +507,7 @@ export class PremierLeagueComponent {
       { team: 'Newcastle United', played: 24, won: 8, drawn: 6, lost: 10, gd: -12, points: 30 },
       { team: 'Brighton & Hove Albion', played: 24, won: 6, drawn: 7, lost: 11, gd: -7, points: 25 },
       { team: 'Aston Villa', played: 24, won: 7, drawn: 4, lost: 13, gd: -14, points: 25 },
-      { team: 'West Ham United', played: 23, won: 6, drawn: 5, lost: 12, gd: -11, points: 23 },
+      { team: 'West Ham United', played: 24, won: 6, drawn: 5, lost: 13, gd: -13, points: 23 },
       { team: 'Bournemouth', played: 24, won: 6, drawn: 5, lost: 13, gd: -14, points: 23 },
       { team: 'Watford', played: 24, won: 5, drawn: 8, lost: 11, gd: -15, points: 23 },
       { team: 'Norwich City', played: 24, won: 4, drawn: 5, lost: 15, gd: -23, points: 17 },
@@ -541,9 +541,6 @@ export class PremierLeagueComponent {
     */
 
     this.fixtures = [
-      [
-        { home: 'West Ham United', homeScore: null, awayScore: null, away: 'Liverpool' }
-      ],
       [
         { home: 'Bournemouth', homeScore: null, awayScore: null, away: 'Aston Villa' },
         { home: 'Burnley', homeScore: null, awayScore: null, away: 'Arsenal' },
