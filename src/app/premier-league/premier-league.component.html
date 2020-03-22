@@ -1,65 +1,75 @@
 <div class="overlay">
 
-	<!-- table -->
-  <table class="league-table">
+  <!-- table -->
+  <div>
+    <table class="league-table">
 
-    <thead>
-      <tr>
-        <th><abbr title="Position">Pos</abbr></th>
-        <th>Team</th>
-        <th><abbr title="Played">Pld</abbr></th>
-        <th><abbr title="Won">W</abbr></th>
-        <th><abbr title="Drawn">D</abbr></th>
-        <th><abbr title="Lost">L</abbr></th>
-        <th><abbr title="Goal difference">GD</abbr></th>
-        <th><abbr title="Points">Pts</abbr></th>
-      </tr>
-    </thead>
+      <thead>
+        <tr>
+          <th><abbr title="Position">Pos</abbr></th>
+          <th>Team</th>
+          <th><abbr title="Played">Pld</abbr></th>
+          <th><abbr title="Won">W</abbr></th>
+          <th><abbr title="Drawn">D</abbr></th>
+          <th><abbr title="Lost">L</abbr></th>
+          <th><abbr title="Goal difference">GD</abbr></th>
+          <th><abbr title="Points">Pts</abbr></th>
+        </tr>
+      </thead>
 
-     <tbody>
-      <tr *ngFor="let team of league; index as i">
-        <td>{{i+1}}</td>
-        <td>{{team.team}}</td>
-        <td>{{team.played}}</td>
-        <td>{{team.won}}</td>
-        <td>{{team.drawn}}</td>
-        <td>{{team.lost}}</td>
-        <td>{{team.gd}}</td>
-        <td>{{team.points}}</td>
-      </tr>
-     </tbody>
+      <tbody>
+        <tr *ngFor="let team of league; index as i">
+          <td>{{i+1}}</td>
+          <td>{{team.team}}</td>
+          <td>{{team.played}}</td>
+          <td>{{team.won}}</td>
+          <td>{{team.drawn}}</td>
+          <td>{{team.lost}}</td>
+          <td>{{team.gd}}</td>
+          <td>{{team.points}}</td>
+        </tr>
+      </tbody>
 
-  </table>
+    </table>
+  </div>
 
-	<!-- fixtures -->
-  <table class="fixtures-table">
+  <!-- fixtures -->
+  <div>
+    <table class="fixtures-table">
 
-	<tbody>
-   	 <tr *ngFor="let fixture of fixtures[gameweek]">
-        <td style="text-align:right;"><abbr title="Home">{{fixture.home}}</abbr></td>
-         <td><abbr title="HomeG"></abbr>
-		   <div>
-          <input class="input is-small is-focused" style="width:40px" [(ngModel)]="fixture.homeScore" type="number" id="name" name="name" required minlength="0" maxlength="2" placeholder="0" size="2" autocomplete="off">
-	       </div>
-	    </td>
-         <td><abbr title="AwayG"></abbr>
-		    <div>
-		<input class="input is-small is-focused" style="width:40px" [(ngModel)]="fixture.awayScore" type="number" id="name" name="name" required minlength="0" maxlength="2" placeholder="0" size="2" autocomplete="off">
+      <tbody>
+        <tr *ngFor="let fixture of fixtures[gameweek]">
+          <td style="text-align: right; width: 250px;">
+            <abbr title="Home">{{fixture.home}}</abbr>
+          </td>
+          <td>
+            <div>
+              <input class="input is-small is-focused" style="width:40px" [(ngModel)]="fixture.homeScore" type="number" id="name" name="name" required minlength="0" maxlength="2" placeholder="0" size="2" autocomplete="off">
             </div>
-	    </td>
-        <td><abbr title="Away">{{fixture.away}}</abbr></td>
-      </tr>
-   	</tbody>
+          </td>
+          <td>
+            <div>
+              <input class="input is-small is-focused" style="width:40px" [(ngModel)]="fixture.awayScore" type="number" id="name" name="name" required minlength="0" maxlength="2" placeholder="0" size="2" autocomplete="off">
+            </div>
+          </td>
+          <td style="width: 250px;">
+            <abbr title="Away">{{fixture.away}}</abbr>
+          </td>
+        </tr>
 
-	<div class="buttonwrapper">
-	    <button class="button is-rounded" (click)="matchResultsUpdateTable(this.fixtures[gameweek])">update table</button>
-	    <button class="button is-rounded" (click)="reset()">reset table</button>
-	  </div>
+        <tr>
+          <td style="text-align: right"><button class="button is-rounded" (click)="matchResultsUpdateTable(this.fixtures[gameweek])">update table</button></td>
+          <td></td>
+          <td></td>
+          <td><button class="button is-rounded" (click)="reset()">reset table</button></td>
+        </tr>
 
-  </table>
+      </tbody>
 
-
-	<!-- buttons -->
-
-
+    </table>
 </div>
+
+
+
+
+
