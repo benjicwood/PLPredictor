@@ -6,22 +6,27 @@ import { AppComponent } from './app.component'
 import { PremierLeagueComponent } from './premier-league/premier-league.component'
 
 import { AppRoutingModule } from './app-routing.module'
-import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { PremierLeagueTableComponent } from './premier-league/premier-league-table/premier-league-table.component';
+import { PremierLeagueFixturesComponent } from './premier-league/premier-league-fixtures/premier-league-fixtures.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PremierLeagueComponent,
-    HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    PremierLeagueTableComponent,
+    PremierLeagueFixturesComponent
   ],
   imports: [
     BrowserModule, FormsModule, AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    PremierLeagueFixturesComponent,
+    PremierLeagueTableComponent,
+  ],
   bootstrap: [
     AppComponent
   ]
