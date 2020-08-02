@@ -2,7 +2,7 @@
 
   <!-- table -->
 
-<app-premier-league-table></app-premier-league-table>
+<app-premier-league-table (league)="league"></app-premier-league-table>
 
   <!-- fixtures -->
 
@@ -35,7 +35,12 @@
   </table> -->
 
 
-	<!-- buttons -->
+  <!-- buttons -->
+
+  <div class="buttonwrapper">
+    <button class="button is-rounded" (click)="matchResultsUpdateTable(this.fixtures[gameweek])">update table</button>
+    <button class="button is-rounded" (click)="reset()">reset table</button>
+  </div>
 
 
 </div>
