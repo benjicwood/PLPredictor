@@ -37,91 +37,57 @@ export class PremierLeagueService {
     ];
 
     public matchResultsUpdateTable(fixtures): any {
-     for (let fixture of fixtures) {
-      for (var i = 0; i < this.league.length; i++) {
-        if (fixture['home'] === this.league[i]['team']) {
-          this.league[i]['played'] += 1
-          this.league[i]['won'] += fixture['homeScore'] > fixture['awayScore'] ? 1 : 0
-          this.league[i]['drawn'] += fixture['homeScore'] === fixture['awayScore'] ? 1 : 0
-          this.league[i]['lost'] += fixture['homeScore'] < fixture['awayScore'] ? 1 : 0
-          this.league[i]['gd'] += fixture['homeScore'] - fixture['awayScore']
-          this.league[i]['points'] += fixture['homeScore'] > fixture['awayScore'] ? 3 : fixture['homeScore'] === fixture['awayScore'] ? 1 : 0
-        }
-        else if (fixture['away'] === this.league[i]['team']) {
-          this.league[i]['played'] += 1
-          this.league[i]['won'] += fixture['awayScore'] > fixture['homeScore'] ? 1 : 0
-          this.league[i]['drawn'] += fixture['awayScore'] === fixture['homeScore'] ? 1 : 0
-          this.league[i]['lost'] += fixture['awayScore'] < fixture['homeScore'] ? 1 : 0
-          this.league[i]['gd'] += fixture['awayScore'] - fixture['homeScore']
-          this.league[i]['points'] += fixture['awayScore'] > fixture['homeScore'] ? 3 : fixture['awayScore'] === fixture['homeScore'] ? 1 : 0
 
+      for (const fixture of fixtures) {
+        for (let i = 0; i < this.league.length; i++) {
+          if (fixture['home'] === this.league[i]['team']) {
+            this.league[i]['played'] += 1;
+            this.league[i]['won'] += fixture['homeScore'] > fixture['awayScore'] ? 1 : 0;
+            this.league[i]['drawn'] += fixture['homeScore'] === fixture['awayScore'] ? 1 : 0;
+            this.league[i]['lost'] += fixture['homeScore'] < fixture['awayScore'] ? 1 : 0;
+            this.league[i]['gd'] += fixture['homeScore'] - fixture['awayScore'];
+            this.league[i]['points'] += fixture['homeScore'] > fixture['awayScore'] ?
+            3 : fixture['homeScore'] === fixture['awayScore'] ? 1 : 0;
+          }
+          if (fixture['away'] === this.league[i]['team']) {
+            this.league[i]['played'] += 1;
+            this.league[i]['won'] += fixture['awayScore'] > fixture['homeScore'] ? 1 : 0;
+            this.league[i]['drawn'] += fixture['awayScore'] === fixture['homeScore'] ? 1 : 0;
+            this.league[i]['lost'] += fixture['awayScore'] < fixture['homeScore'] ? 1 : 0;
+            this.league[i]['gd'] += fixture['awayScore'] - fixture['homeScore'];
+            this.league[i]['points'] += fixture['awayScore'] > fixture['homeScore'] ?
+            3 : fixture['awayScore'] === fixture['homeScore'] ? 1 : 0;
+          }
         }
       }
+
+      this.league.sort(this.sortGd).sort(this.sortLeague).reverse();
     }
 
-    console.log(this.league)
-    this.premierLeagueTableComponent.league = this.league;
+  public sortGd(a, b) { // sortGoalDifference
+    const aGoalDiff = a.gd;
+    const bGoalDiff = b.gd;
 
-    }
+    let comparison = 0;
 
- //   public league = this.premierLeagueTableComponent.league;
+    if (aGoalDiff > bGoalDiff) { comparison = 1; }
+    if (aGoalDiff < bGoalDiff) { comparison = -1; }
 
+    return comparison;
+  }
 
-  // public sortGd(a, b) { // sortGoalDifference
-  //   const aGoalDiff = a.gd
-  //   const bGoalDiff = b.gd
+  public sortLeague(a, b) {
+    const aPoints = a.points;
+    const bPoints = b.points;
 
-  //   let comparison = 0
+    const aGoalDiff = a.gd;
+    const bGoalDiff = b.gd;
 
-  //   if (aGoalDiff > bGoalDiff) { comparison = 1 }
-  //   if (aGoalDiff < bGoalDiff) { comparison = -1 }
+    let comparison = 0;
 
-  //   return comparison
-  // }
+    if (aPoints > bPoints) { comparison = 1; }
+    if (aPoints < bPoints) { comparison = -1; }
 
-  // public sortLeague(a, b) {
-  //   const aPoints = a.points;
-  //   const bPoints = b.points;
-
-  //   const aGoalDiff = a.gd;
-  //   const bGoalDiff = b.gd;
-
-  //   let comparison = 0;
-
-  //   if (aPoints > bPoints) { comparison = 1; }
-  //   if (aPoints < bPoints) { comparison = -1; }
-
-  //   return comparison;
-  // }
-
-  // public matchResultsUpdateTable(fixtures): any {
-
-  //   let newLeague = this.league;
-
-  //   for (let fixture of fixtures) {
-  //     for (var i = 0; i < this.league.length; i++) {
-  //       if (fixture['home'] === this.league[i]['team']) {
-  //         this.league[i]['played'] += 1
-  //         this.league[i]['won'] += fixture['homeScore'] > fixture['awayScore'] ? 1 : 0
-  //         this.league[i]['drawn'] += fixture['homeScore'] === fixture['awayScore'] ? 1 : 0
-  //         this.league[i]['lost'] += fixture['homeScore'] < fixture['awayScore'] ? 1 : 0
-  //         this.league[i]['gd'] += fixture['homeScore'] - fixture['awayScore']
-  //         this.league[i]['points'] += fixture['homeScore'] > fixture['awayScore'] ? 3 : fixture['homeScore'] === fixture['awayScore'] ? 1 : 0
-  //       }
-  //       else if (fixture['away'] === this.league[i]['team']) {
-  //         this.league[i]['played'] += 1
-  //         this.league[i]['won'] += fixture['awayScore'] > fixture['homeScore'] ? 1 : 0
-  //         this.league[i]['drawn'] += fixture['awayScore'] === fixture['homeScore'] ? 1 : 0
-  //         this.league[i]['lost'] += fixture['awayScore'] < fixture['homeScore'] ? 1 : 0
-  //         this.league[i]['gd'] += fixture['awayScore'] - fixture['homeScore']
-  //         this.league[i]['points'] += fixture['awayScore'] > fixture['homeScore'] ? 3 : fixture['awayScore'] === fixture['homeScore'] ? 1 : 0
-
-  //       }
-  //     }
-  //   }
-
-  //   // this.gameweek += 1;
-  //   return newLeague.sort(this.sortGd).sort(this.sortLeague).reverse();
-  // }
-
+    return comparison;
+  }
 }

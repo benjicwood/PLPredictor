@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 import { PremierLeagueService } from '../premier-league.service';
 
@@ -9,7 +9,9 @@ import { PremierLeagueService } from '../premier-league.service';
 })
 export class PremierLeagueFixturesComponent implements OnInit {
 
-  public gameweek = 0;
+  @Input() gameweek: number = 0;
+
+  public hasRemainingFixtures = true;
 
   public fixtures: object[] = [
     [
@@ -61,8 +63,17 @@ export class PremierLeagueFixturesComponent implements OnInit {
   }
 
   public matchResultsUpdateTable(fixtures) {
+    if (!fixtures) {
+      this.hasRemainingFixtures = false;
+      return;
+    }
     this.premierLeagueService.matchResultsUpdateTable(fixtures);
+    this.gameweek ++;
   }
 
+  public resetTable() {
+    this.gameweek = 0;
+    this.hasRemainingFixtures = true;
+  }
 
 }
