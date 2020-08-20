@@ -16,12 +16,12 @@ export class PremierLeagueService {
     public league: object[] = [
       { team: 'Arsenal', played: 0, won: 0, drawn: 0, lost: 0, gd: 0, points: 0 },
       { team: 'Aston Villa', played: 0, won: 0, drawn: 0, lost: 0, gd: 0, points: 0 },
-      { team: 'Brentford', played: 0, won: 0, drawn: 0, lost: 0, gd: 0, points: 0 },
       { team: 'Brighton & Hove Albion', played: 0, won: 0, drawn: 0, lost: 0, gd: 0, points: 0 },
       { team: 'Burnley', played: 0, won: 0, drawn: 0, lost: 0, gd: 0, points: 0 },
       { team: 'Chelsea', played: 0, won: 0, drawn: 0, lost: 0, gd: 0, points: 0 },
       { team: 'Crystal Palace', played: 0, won: 0, drawn: 0, lost: 0, gd: 0, points: 0 },
       { team: 'Everton', played: 0, won: 0, drawn: 0, lost: 0, gd: 0, points: 0 },
+      { team: 'Fulham', played: 0, won: 0, drawn: 0, lost: 0, gd: 0, points: 0 },
       { team: 'Leeds United', played: 0, won: 0, drawn: 0, lost: 0, gd: 0, points: 0 },
       { team: 'Leicester City', played: 0, won: 0, drawn: 0, lost: 0, gd: 0, points: 0 },
       { team: 'Liverpool', played: 0, won: 0, drawn: 0, lost: 0, gd: 0, points: 0 },
@@ -89,5 +89,18 @@ export class PremierLeagueService {
     if (aPoints < bPoints) { comparison = -1; }
 
     return comparison;
+  }
+
+  public resetTable() {
+    // this.league = this.league2;
+    this.league.forEach(team => this.resetTeam(team));
+  }
+
+  public resetTeam(team) {
+    team.played = 0;
+    team.won = 0;
+    team.drawn = 0;
+    team.lost = 0;
+    team.gd = 0;
   }
 }
