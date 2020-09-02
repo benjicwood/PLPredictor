@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { TextAst } from '@angular/compiler';
 
 // import { PremierLeagueTableComponent } from './premier-league-table/premier-league-table.component';
 // import { PremierLeagueFixturesComponent } from './premier-league-fixtures/premier-league-fixtures.component';
@@ -102,5 +103,6 @@ export class PremierLeagueService {
     team.drawn = 0;
     team.lost = 0;
     team.gd = 0;
+    team.points = 0;
   }
 }
