@@ -29,3 +29,22 @@ thead th {
    color: #363636;
    text-decoration: none;
  }
+
+ tbody {
+   tr:nth-child(17) {
+     border-bottom: 3px black solid;
+   }
+ }
+
+ tbody tr img {
+   height: 25px;
+   margin-top: 5px;
+ }
+
+ .team-logo {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  border-bottom: 1px solid #dbdbdb;
+ }
+
