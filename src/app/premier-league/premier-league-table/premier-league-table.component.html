@@ -3,6 +3,7 @@
   <thead>
     <tr>
       <th><abbr title="Position">Pos</abbr></th>
+      <th></th>
       <th>Team</th>
       <th><abbr title="Played">Pld</abbr></th>
       <th><abbr title="Won">W</abbr></th>
@@ -16,6 +17,7 @@
    <tbody>
     <tr *ngFor="let team of league; index as i">
       <td>{{i+1}}</td>
+      <div class="team-logo"><img src="./../assets/img/club-logos/{{team.icon}}.png"></div>
       <td>{{team.team}}</td>
       <td>{{team.played}}</td>
       <td>{{team.won}}</td>
