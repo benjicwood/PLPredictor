@@ -6,8 +6,8 @@
    font-family: 'Noto Sans', sans-serif;
  }
 
- tr:nth-child(even) {background: whitesmoke}
- tr:nth-child(odd) {background: white}
+ tr:nth-child(even) { background: whitesmoke; }
+ tr:nth-child(odd) { background: white; }
 
  td,
  th {
@@ -17,14 +17,6 @@
    vertical-align: top;
    text-decoration: none;
  }
-
-.buttonwrapper {
- text-align: center;
-}
-
-.button {
- margin: 2px;
-}
 
 /* Hide HTML5 Up and Down arrows. */
 input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {

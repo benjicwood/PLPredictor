@@ -1,7 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-import { PremierLeagueTableComponent } from './premier-league-table/premier-league-table.component';
-import { PremierLeagueFixturesComponent } from './premier-league-fixtures/premier-league-fixtures.component';
+import { PremierLeagueService } from './premier-league.service';
 
 @Component({
   selector: 'app-premier-league',
@@ -9,15 +8,44 @@ import { PremierLeagueFixturesComponent } from './premier-league-fixtures/premie
   styleUrls: ['./premier-league.component.scss']
 })
 
-export class PremierLeagueComponent {
+export class PremierLeagueComponent implements OnInit {
 
-  public league = this.premierLeagueTableComponent.league;
-  public fixtures = this.premierLeagueFixturesComponent.fixtures;
+  public league;
+  public fixtures;
+
   public gameweek = 0;
+  public hasRemainingFixtures = true;
 
   constructor(
-    public premierLeagueFixturesComponent: PremierLeagueFixturesComponent,
-    public premierLeagueTableComponent: PremierLeagueTableComponent,
+    public premierLeagueService: PremierLeagueService,
   ) {}
+
+  ngOnInit() {
+      this.getData();
+  }
+
+
+  getData() {
+    this.league = this.premierLeagueService.league;
+    this.fixtures = this.premierLeagueService.fixtures;
+  }
+
+  public matchResultsUpdateTable(fixtures) {
+    if (!fixtures) {
+      this.hasRemainingFixtures = false;
+      return;
+    }
+    this.premierLeagueService.matchResultsUpdateTable(fixtures);
+    this.gameweek ++;
+  }
+
+  public resetTable() {
+    this.gameweek = 0;
+    this.hasRemainingFixtures = true;
+    this.premierLeagueService.resetTable();
+    this.fixtures = this.premierLeagueService.fixtures;
+    this.league = this.premierLeagueService.league;
+  }
+
 
 }

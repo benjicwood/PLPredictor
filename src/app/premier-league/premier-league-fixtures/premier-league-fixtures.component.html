@@ -1,27 +1,20 @@
 <div>
 
-<table class="fixtures-table">
+  <table class="fixtures-table">
 
-	<tbody>
-    <tr *ngFor="let fixture of fixtures[gameweek]">
-      <td style="text-align:right; width: 250px;"><abbr title="Home">{{fixture.home}}</abbr></td>
-        <td><abbr title="HomeG"></abbr>
-        <input class="input is-small is-focused" style="width:40px" [(ngModel)]="fixture.homeScore" type="number" id="name" name="name" required minlength="0" maxlength="2" placeholder="0" size="2" autocomplete="off">
-	    </td>
-        <td><abbr title="AwayG"></abbr>
-		    <input class="input is-small is-focused" style="width:40px" [(ngModel)]="fixture.awayScore" type="number" id="name" name="name" required minlength="0" maxlength="2" placeholder="0" size="2" autocomplete="off">
-	    </td>
-        <td style="width:250px;"><abbr title="Away">{{fixture.away}}</abbr></td>
-    </tr>
-  </tbody>
+    <tbody>
+      <tr *ngFor="let fixture of fixtures[gameweek]">
+        <td style="text-align:right; width: 250px;"><abbr title="Home">{{fixture.home}}</abbr></td>
+          <td><abbr title="HomeG"></abbr>
+          <input class="input is-small is-focused" style="width:40px" [(ngModel)]="fixture.homeScore" type="number" id="name" name="name" required minlength="0" maxlength="2" placeholder="0" size="2" autocomplete="off">
+        </td>
+          <td><abbr title="AwayG"></abbr>
+          <input class="input is-small is-focused" style="width:40px" [(ngModel)]="fixture.awayScore" type="number" id="name" name="name" required minlength="0" maxlength="2" placeholder="0" size="2" autocomplete="off">
+        </td>
+          <td style="width:250px;"><abbr title="Away">{{fixture.away}}</abbr></td>
+      </tr>
+    </tbody>
 
-</table>
-
-  <tr>
-    <div class="buttonwrapper" style="width: 628px">
-	    <button [disabled]="!hasRemainingFixtures" class="button is-rounded" (click)="matchResultsUpdateTable(this.fixtures[gameweek])">update table</button>
-	    <button class="button is-rounded" (click)="resetTable()">reset table</button>
-	</div>
-  </tr>
+  </table>
 
 </div>

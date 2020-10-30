@@ -1,9 +1,16 @@
 <div class="overlay">
 
   <!-- table -->
-<app-premier-league-table (league)="league"></app-premier-league-table>
+<app-premier-league-table [league]="league"></app-premier-league-table>
 
   <!-- fixtures -->
-  <app-premier-league-fixtures></app-premier-league-fixtures>
+  <app-premier-league-fixtures [fixtures]="fixtures" [gameweek]="gameweek"></app-premier-league-fixtures>
+
+  <tr>
+    <div class="button-wrapper">
+      <button [disabled]="!hasRemainingFixtures" class="button is-rounded" (click)="matchResultsUpdateTable(this.fixtures[gameweek])">update table</button>
+	    <button class="button is-rounded" (click)="resetTable()">reset table</button>
+	  </div>
+  </tr>
 
 </div>

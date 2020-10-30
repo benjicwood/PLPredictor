@@ -1,8 +1,12 @@
-import { Injectable } from '@angular/core';
-import { TextAst } from '@angular/compiler';
+import { EventEmitter, Injectable, Output } from '@angular/core';
 
-// import { PremierLeagueTableComponent } from './premier-league-table/premier-league-table.component';
-// import { PremierLeagueFixturesComponent } from './premier-league-fixtures/premier-league-fixtures.component';
+import * as _ from 'lodash';
+
+import { PremierLeagueFixturesService } from './premier-league-fixtures/premier-league-fixtures.service';
+import { PremierLeagueTableService } from './premier-league-table/premier-league-table.service';
+
+import { fixturesData } from './data/fixtures';
+import { leagueData } from './data/league-table';
 
 @Injectable({
   providedIn: 'root'
@@ -10,32 +14,15 @@ import { TextAst } from '@angular/compiler';
 export class PremierLeagueService {
 
   constructor(
-    // public premierLeagueFixturesComponent: PremierLeagueFixturesComponent,
-   //  public premierLeagueTableComponent: PremierLeagueTableComponent,
+    public premierLeagueFixturesService: PremierLeagueFixturesService,
+    public premierLeagueTableService: PremierLeagueTableService,
     ) { }
 
-    public league: object[] = [
-      { team: 'Leicester City', icon: 'leicestercity', played: 3, won: 3, drawn: 0, lost: 0, gd: 8, points: 9 },
-      { team: 'Liverpool', icon: 'liverpool', played: 3, won: 3, drawn: 0, lost: 0, gd: 5, points: 9 },
-      { team: 'Everton', icon: 'everton', played: 3, won: 3, drawn: 0, lost: 0, gd: 5, points: 9 },
-      { team: 'Aston Villa', icon: 'astonvilla', played: 2, won: 2, drawn: 0, lost: 0, gd: 4, points: 6 },
-      { team: 'Arsenal', icon: 'arsenal', played: 3, won: 2, drawn: 0, lost: 1, gd: 2, points: 6 },
-      { team: 'Crystal Palace', icon: 'crystalpalace', played: 3, won: 2, drawn: 0, lost: 1, gd: 2, points: 6 },
-      { team: 'Leeds United', icon: 'leedsunited', played: 3, won: 2, drawn: 0, lost: 1, gd: 1, points: 6 },
-      { team: 'Tottenham Hotspur', icon: 'tottenhamhotspur', played: 3, won: 1, drawn: 1, lost: 1, gd: 2, points: 4 },
-      { team: 'Chelsea', icon: 'chelsea', played: 3, won: 1, drawn: 1, lost: 1, gd: 0, points: 4 },
-      { team: 'Newcastle United', icon: 'newcastleunited', played: 3, won: 1, drawn: 1, lost: 1, gd: -1, points: 4 },
-      { team: 'West Ham United', icon: 'westhamunited', played: 3, won: 1, drawn: 0, lost: 2, gd: 1, points: 3 },
-      { team: 'Brighton & Hove Albion', icon: 'brightonandhovealbion', played: 3, won: 1, drawn: 0, lost: 2, gd: 0, points: 3 },
-      { team: 'Manchester City', icon: 'manchestercity', played: 2, won: 1, drawn: 0, lost: 1, gd: -1, points: 3 },
-      { team: 'Manchester United', icon: 'manchesterunited', played: 2, won: 1, drawn: 0, lost: 1, gd: -1, points: 3 },
-      { team: 'Southampton', icon: 'southampton', played: 3, won: 1, drawn: 0, lost: 2, gd: -3, points: 3 },
-      { team: 'Wolverhampton Wanderers', icon: 'wolverhamptonwanderers', played: 3, won: 1, drawn: 0, lost: 2, gd: -4, points: 3 },
-      { team: 'West Bromwich Albion', icon: 'westbromwichalbion', played: 3, won: 0, drawn: 1, lost: 2, gd: -6, points: 1 },
-      { team: 'Burnley', icon: 'burnley', played: 2, won: 0, drawn: 0, lost: 2, gd: -3, points: 0 },
-      { team: 'Sheffield United', icon: 'sheffieldunited', played: 3, won: 0, drawn: 0, lost: 3, gd: -4, points: 0 },
-      { team: 'Fulham', icon: 'fulham', played: 3, won: 0, drawn: 0, lost: 3, gd: -7, points: 0 },
-    ];
+    public league: object[] = _.cloneDeep(leagueData);
+    public fixtures: object[] = _.cloneDeep(fixturesData);
+
+    @Output() leagueReset: EventEmitter<object> = new EventEmitter();
+    @Output() fixturesReset: EventEmitter<object> = new EventEmitter();
 
     public matchResultsUpdateTable(fixtures): any {
 
@@ -92,17 +79,13 @@ export class PremierLeagueService {
     return comparison;
   }
 
-  public resetTable() {
-    // this.league = this.league2;
-    this.league.forEach(team => this.resetTeam(team));
+  public getLeague() {
+    this.league = leagueData;
   }
 
-  public resetTeam(team) {
-    team.played = 0;
-    team.won = 0;
-    team.drawn = 0;
-    team.lost = 0;
-    team.gd = 0;
-    team.points = 0;
+  public resetTable() {
+    this.league = _.cloneDeep(leagueData);
+    this.fixtures = _.cloneDeep(fixturesData);
   }
+
 }
