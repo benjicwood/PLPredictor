@@ -6,28 +6,12 @@ export let fixturesData = [
   // [
   //   { home: 'Aston Villa', homeScore: null, awayScore: null, away: 'Newcastle United' },
   // ],
-  [
-    { home: 'Burnley', homeScore: null, awayScore: null, away: 'Wolverhampton Wanderers' },
-    { home: 'Chelsea', homeScore: null, awayScore: null, away: 'West Ham United' },
-  ],
-  [
-    { home: 'Arsenal', homeScore: null, awayScore: null, away: 'Chelsea' },
-    { home: 'Aston Villa', homeScore: null, awayScore: null, away: 'Crystal Palace' },
-    { home: 'Fulham', homeScore: null, awayScore: null, away: 'Southampton' },
-    { home: 'Leeds United', homeScore: null, awayScore: null, away: 'Burnley' },
-    { home: 'Leicester City', homeScore: null, awayScore: null, away: 'Manchester United' },
-    { home: 'Liverpool', homeScore: null, awayScore: null, away: 'West Bromwich Albion' },
-    { home: 'Manchester City', homeScore: null, awayScore: null, away: 'Newcastle United' },
-    { home: 'Sheffield United', homeScore: null, awayScore: null, away: 'Everton' },
-    { home: 'West Ham United', homeScore: null, awayScore: null, away: 'Brighton & Hove Albion' },
-    { home: 'Wolverhampton Wanderers', homeScore: null, awayScore: null, away: 'Tottenham Hotspur' }
-  ],
+   // [
+  //   { home: 'Everton', homeScore: null, awayScore: null, away: 'Manchester City' },
+  // ],
   [
     { home: 'Brighton & Hove Albion', homeScore: null, awayScore: null, away: 'Arsenal' },
     { home: 'Burnley', homeScore: null, awayScore: null, away: 'Sheffield United' },
-    { home: 'Chelsea', homeScore: null, awayScore: null, away: 'Aston Villa' },
-    { home: 'Crystal Palace', homeScore: null, awayScore: null, away: 'Leicester City' },
-    { home: 'Everton', homeScore: null, awayScore: null, away: 'Manchester City' },
     { home: 'Manchester United', homeScore: null, awayScore: null, away: 'Wolverhampton Wanderers' },
     { home: 'Newcastle United', homeScore: null, awayScore: null, away: 'Liverpool' },
     { home: 'Southampton', homeScore: null, awayScore: null, away: 'West Ham United' },
