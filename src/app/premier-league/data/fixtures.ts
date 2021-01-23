@@ -1,31 +1,13 @@
 export let fixturesData = [
   // [
   //   { home: 'Manchester City', homeScore: null, awayScore: null, away: 'Aston Villa' },
-  //   { home: 'Aston Villa', homeScore: null, awayScore: null, away: 'Newcastle United' },
   //   { home: 'Everton', homeScore: null, awayScore: null, away: 'Manchester City' },
   //   { home: 'Burnley', homeScore: null, awayScore: null, away: 'Fulham' },
   //   { home: 'Aston Villa', homeScore: null, awayScore: null, away: 'Tottenham Hotspur' },
   //   { home: 'Aston Villa', homeScore: null, awayScore: null, away: 'Everton' },
   // ],
   [
-    { home: 'Fulham', homeScore: null, awayScore: null, away: 'Chelsea' },
-  ],
-  [
-    { home: 'Arsenal', homeScore: null, awayScore: null, away: 'Newcastle United' },
-    { home: 'Leeds United', homeScore: null, awayScore: null, away: 'Brighton & Hove Albion' },
-    { home: 'Leicester City', homeScore: null, awayScore: null, away: 'Southampton' },
-    { home: 'Liverpool', homeScore: null, awayScore: null, away: 'Manchester United' },
-    { home: 'Manchester City', homeScore: null, awayScore: null, away: 'Crystal Palace' },
-    { home: 'Sheffield United', homeScore: null, awayScore: null, away: 'Tottenham Hotspur' },
-    { home: 'West Ham United', homeScore: null, awayScore: null, away: 'Burnley' },
-    { home: 'Wolverhampton Wanderers', homeScore: null, awayScore: null, away: 'West Bromwich Albion' }
-  ],
-  [
-    { home: 'West Ham United', homeScore: null, awayScore: null, away: 'West Bromwich Albion' },
-    { home: 'Leicester City', homeScore: null, awayScore: null, away: 'Chelsea' },
-    { home: 'Fulham', homeScore: null, awayScore: null, away: 'Manchester United' },
-    { home: 'Leeds United', homeScore: null, awayScore: null, away: 'Southampton' },
-    { home: 'Liverpool', homeScore: null, awayScore: null, away: 'Burnley' },
+    { home: 'Aston Villa', homeScore: null, awayScore: null, away: 'Newcastle United' },
   ],
   [
     { home: 'Brighton & Hove Albion', homeScore: null, awayScore: null, away: 'Fulham' },
