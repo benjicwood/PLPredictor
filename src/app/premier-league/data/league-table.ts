@@ -1,5 +1,5 @@
 export let leagueData = [
-  { team: 'Manchester City', icon: 'manchestercity', played: 22, won: 15, drawn: 5, lost: 2, gd: 29, points: 47  },
+  { team: 'Manchester City', icon: 'manchestercity', played: 22, won: 15, drawn: 5, lost: 2, gd: 29, points: 50  },
   { team: 'Manchester United', icon: 'manchesterunited', played: 23, won: 13, drawn: 6, lost: 4, gd: 19, points: 45 },
   { team: 'Leicester City', icon: 'leicestercity', played: 23, won: 13, drawn: 4, lost: 6, gd: 14, points: 43 },
   { team: 'Liverpool', icon: 'liverpool', played: 23, won: 11, drawn: 7, lost: 5, gd: 15, points: 40 },
