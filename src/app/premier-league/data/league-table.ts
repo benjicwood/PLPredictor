@@ -3,10 +3,10 @@ export let leagueData = [
   { team: 'Manchester United', icon: 'manchesterunited', played: 23, won: 13, drawn: 6, lost: 4, gd: 19, points: 45 },
   { team: 'Leicester City', icon: 'leicestercity', played: 23, won: 13, drawn: 4, lost: 6, gd: 14, points: 43 },
   { team: 'Liverpool', icon: 'liverpool', played: 23, won: 11, drawn: 7, lost: 5, gd: 15, points: 40 },
+  { team: 'Chelsea', icon: 'chelsea', played: 23, won: 11, drawn: 6, lost: 6, gd: 14, points: 39 },
   { team: 'West Ham United', icon: 'westhamunited', played: 23, won: 11, drawn: 6, lost: 6, gd: 6, points: 39 },
   { team: 'Everton', icon: 'everton', played: 21, won: 11, drawn: 4, lost: 6, gd: 6, points: 37 },
   { team: 'Tottenham Hotspur', icon: 'tottenhamhotspur', played: 22, won: 10, drawn: 6, lost: 6, gd: 14, points: 36 },
-  { team: 'Chelsea', icon: 'chelsea', played: 22, won: 10, drawn: 6, lost: 6, gd: 13, points: 36 },
   { team: 'Aston Villa', icon: 'astonvilla', played: 21, won: 11, drawn: 2, lost: 8, gd: 12, points: 35 },
   { team: 'Arsenal', icon: 'arsenal', played: 23, won: 9, drawn: 4, lost: 10, gd: 4, points: 31 },
   { team: 'Leeds United', icon: 'leedsunited', played: 21, won: 9, drawn: 2, lost: 10, gd: -2, points: 29 },
@@ -18,5 +18,5 @@ export let leagueData = [
   { team: 'Burnley', icon: 'burnley', played: 22, won: 6, drawn: 5, lost: 11, gd: -15, points: 23 },
   { team: 'Fulham', icon: 'fulham', played: 22, won: 2, drawn: 9, lost: 11, gd: -14, points: 15 },
   { team: 'West Bromwich Albion', icon: 'westbromwichalbion', played: 23, won: 2, drawn: 6, lost: 15, gd: -36, points: 12 },
-  { team: 'Sheffield United', icon: 'sheffieldunited', played: 22, won: 3, drawn: 2, lost: 17, gd: -21, points: 11 },
+  { team: 'Sheffield United', icon: 'sheffieldunited', played: 23, won: 3, drawn: 2, lost: 18, gd: -22, points: 11 },
 ];
