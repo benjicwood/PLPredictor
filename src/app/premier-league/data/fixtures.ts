@@ -4,20 +4,9 @@ export let fixturesData = [
   //   { home: 'Aston Villa', homeScore: null, awayScore: null, away: 'Everton' },
   // ],
   [
-    { home: 'Brighton & Hove Albion', homeScore: null, awayScore: null, away: 'Crystal Palace' },
-    { home: 'Leeds United', homeScore: null, awayScore: null, away: 'Southampton' },
-  ],
-  [
     { home: 'Chelsea', homeScore: null, awayScore: null, away: 'Manchester United' },
-    { home: 'Crystal Palace', homeScore: null, awayScore: null, away: 'Fulham' },
     { home: 'Everton', homeScore: null, awayScore: null, away: 'Southampton' },
-    { home: 'Leeds United', homeScore: null, awayScore: null, away: 'Aston Villa' },
-    { home: 'Leicester City', homeScore: null, awayScore: null, away: 'Arsenal' },
-    { home: 'Manchester City', homeScore: null, awayScore: null, away: 'West Ham United' },
-    { home: 'Newcastle United', homeScore: null, awayScore: null, away: 'Wolverhampton Wanderers' },
     { home: 'Sheffield United', homeScore: null, awayScore: null, away: 'Liverpool' },
-    { home: 'Tottenham Hotspur', homeScore: null, awayScore: null, away: 'Burnley' },
-    { home: 'West Bromwich Albion', homeScore: null, awayScore: null, away: 'Brighton & Hove Albion' }
   ],
   [
     { home: 'Aston Villa', homeScore: null, awayScore: null, away: 'Wolverhampton Wanderers' },
