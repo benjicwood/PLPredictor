@@ -4,38 +4,7 @@ export let fixturesData = [
   //   { home: 'Southampton', homeScore: null, awayScore: null, away: 'Crystal Palace' },
   // ],
   [
-    { home: 'Brighton & Hove Albion', homeScore: null, awayScore: null, away: 'Everton' },
-    { home: 'West Bromwich Albion', homeScore: null, awayScore: null, away: 'Southampton' },
-  ],
-  [
-    { home: 'Everton', homeScore: null, awayScore: null, away: 'Tottenham Hotspur' },
-  ],
-  [
-    { home: 'Newcastle United', homeScore: null, awayScore: null, away: 'West Ham United' },
-    { home: 'Wolverhampton Wanderers', homeScore: null, awayScore: null, away: 'Sheffield United' }
-  ],
-  [
-    { home: 'Arsenal', homeScore: null, awayScore: null, away: 'Fulham' },
-    { home: 'Manchester United', homeScore: null, awayScore: null, away: 'Burnley' },
-  ],
-  [
-    { home: 'Leeds United', homeScore: null, awayScore: null, away: 'Liverpool' },
-    { home: 'Chelsea', homeScore: null, awayScore: null, away: 'Brighton & Hove Albion' },
-  ],
-  [
-    { home: 'Tottenham Hotspur', homeScore: null, awayScore: null, away: 'Southampton' },
-    { home: 'Aston Villa', homeScore: null, awayScore: null, away: 'Manchester City' },
-    { home: 'Leicester City', homeScore: null, awayScore: null, away: 'West Bromwich Albion' },
-  ],
-  [
-    { home: 'Arsenal', homeScore: null, awayScore: null, away: 'Everton' },
-    { home: 'Aston Villa', homeScore: null, awayScore: null, away: 'West Bromwich Albion' },
-    { home: 'Leeds United', homeScore: null, awayScore: null, away: 'Manchester United' },
     { home: 'Leicester City', homeScore: null, awayScore: null, away: 'Crystal Palace' },
-    { home: 'Liverpool', homeScore: null, awayScore: null, away: 'Newcastle United' },
-    { home: 'Sheffield United', homeScore: null, awayScore: null, away: 'Brighton & Hove Albion' },
-    { home: 'West Ham United', homeScore: null, awayScore: null, away: 'Chelsea' },
-    { home: 'Wolverhampton Wanderers', homeScore: null, awayScore: null, away: 'Burnley' }
   ],
   [
     { home: 'Brighton & Hove Albion', homeScore: null, awayScore: null, away: 'Leeds United' },
